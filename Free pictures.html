@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <title>Free pictures</title>
+ <meta charset="utf-8">
+<style>
+
+.box1 {
+     margin-top:60px; 
+    }
+
+.box2 {
+     margin:30px;     
+}
+
+.box3 {
+    margin:50px;
+}
+.box4 {
+	margin-top:50px;
+}
+
+
+li {
+	border:3px solid #006666;
+	border-radius:10%;
+	display:inline;
+	padding:10px;
+	background-color:#009999;
+	color:white;
+	}
+a {
+	color:white;}
+a:link {
+	text-decoration:none;
+	font-weight:bold;
+	}
+</style>
+ </head>
+ <body>
+ <nav>
+	<ul>
+		<li><a href="http://minimography.com/">Minimography</a></li>
+		<li><a href="https://unsplash.com/">Unsplash</a></li>
+		<li><a href="https://www.pexels.com/">Pexels</a></li>
+	</ul>
+</nav>	
+<!-- input, label, select, textarea och button*/-->
+<form action="#<!--här ska det finnas en URL som ska länka till sidan som formuläret ska skickas till-->"> 
+<div class="box1">
+	<label for="username">Username:</label>
+	<input type="text" id="username">
+	<label for="password">Password:</label>
+	<input type="password" id="password"/>
+</div>
+
+<div class="box2">
+	<button style="font-weight:bold; color:white; background-color: green; font-family:cursive; border-radius: 20%" type="button" onclick="alert('You are now logged in.')">Login</button>
+</div>
+	<div class="box1">
+	<label for="four">Date:</label>
+	<input type="date" id="four">
+</div>	
+
+<div class="box2">
+	<label for="one">Name:</label>
+	<input type="text" id="one"/>
+
+	<label for="two">Lastname:</label>
+	<input type="text" id="two"/>
+</div>
+
+<div class="box2">
+	<p>Age:
+		<label for="nine"><18</label>
+		<input type="radio" name="nine"/>
+		<label for="nine">30-55</label>
+		<input type="radio" name="nine"/>
+		<label for="nine"><56</label>
+		<input type="radio" name="nine"/>
+	</p>	
+</div>		
+
+<div class="box2">
+	<p>Gender:
+		<label for="seven">Woman</label>
+		<input type="checkbox" id="seven"/>
+		
+		<label for="eight">Man</label>
+		<input type="checkbox" id="eight"/>
+	</p>
+</div>
+
+<div class="box2">
+	<label for="five">Choose a color:</label>
+	<input type="color" id="five"/>
+</div>	
+
+	
+
+<div class="box2">
+<select>
+	<optgroup label="Payment method US">
+     <option>Visa</option>
+     <option>Mastercard</option>
+	</optgroup>
+	<optgroup label="Payment method EU">
+     <option>PayPal</option> 
+	</optgroup>
+</select>
+</div>	
+<div>
+<p>Comments:</p>
+	<textarea name="comments" rows="20" cols="40" placeholder="Write any comments regarding your order here.." required></textarea>
+</div>
+
+<div class="box2">
+	<label for="six">Upload a file:</label>'
+	<input type="file" id="six"/>
+</div>
+<div class="box1">	
+<button type="submit">Submit</button>
+</div>
+
+
+	
+</form>
+
+</body>
+</html>
