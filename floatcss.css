@@ -1,22 +1,15 @@
-div > div {
-	border:1px solid gray;
-	padding:10px;
-}
-
 .main {
 	width:50%;
-	margin:auto;
+	margin: auto auto 50px auto;
 	background-color:#a3a375;
 	padding:50px;
-	}
-
-.section {
-	
-	margin:auto;
-	}
+}
 img {
 	float:right;
-	margin:0px 0px 20px 30px;
+	margin:0px 0px 30px 20px;
+	max-width: 100%;
+	height: auto;
+	
 }
 .caption {
 	display:table-caption;
@@ -24,7 +17,7 @@ img {
 .table {
 	display:table;
 	border:2px dotted red;
-	margin:auto;
+	margin: auto auto 50px auto;
 	padding:30px;
 }
 .table > div {
@@ -35,43 +28,64 @@ img {
 	padding:10px;
 	text-align:center;
 }
+div > div {
+	border:1px solid gray;
+}
+.section {
+	display:flex;
+	flex-direction:column;
+	width:50%;
+	}
 .header {
 	border:3px solid gray;
 	border-radius:1%;
-	width:800px;
-	height:90px;
 	background-color:#ffff99;
 	display:block;
-	}
+	height:100px;
+	flex:6 6 auto;
+}
+.container {
+	display:inline-flex;
+	flex-direction:row;
+	justify-content:space-between;
+	align-content: flex-start;
+	border:3px solid gray;
+	border-radius:1%;
+	
+	
+}
 .nav {
 	border:3px solid gray;
 	border-radius:1%;
-	width:100px;
-	height:500px;
 	background-color:#99bbff;
-	display:inline-block;
-	}
+	height:500px;
+	flex:1.5 1.5 auto;
+	
+}
 .article {
 	border:3px solid gray;
 	border-radius:1%;
-	width:600px;
-	height:500px;
 	background-color:#ffdd99;
-	display:inline-block;
+	height:500px;
+	flex:4 4 auto;
+
+	
 }
 .aside {
 	border:3px solid gray;
 	border-radius:1%;
-	width:100px;
-	height:500px;
 	background-color:#99bbff;
-	display:inline-block;
+	height:500px;
+	flex:1.5 1.5 auto;
+
+	
 }
 .footer {
 	border:3px solid gray;
 	border-radius:1%;
-	width:800px;
-	height:90px;
 	background-color:#ffff99;
 	display:block;
+	height:100px;
+	flex:6 6 auto;
+
 }

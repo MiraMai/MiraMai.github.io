@@ -1,0 +1,63 @@
+
+.container {
+    display:flex;
+    flex-direction:row;
+    width:80%;
+    margin:auto;
+    border: 2px solid black;
+    height: 200px;
+}
+@media (min-width: 600px) and (max-width: 1050px) {
+    .container{
+        flex-direction: column;
+    }
+}
+.one {
+    height:100px;
+    background-color:#00ffff;
+    flex:1 1 auto;
+    border-radius:2%;
+    border: 1px solid black;
+}
+.two {
+    height:100px;
+    background-color:#0066ff;
+    flex:1 1 auto;
+    border-radius:2%;
+}
+.three {
+    height:100px;
+    background-color:#ff0066;
+    flex:1 1 auto;
+    border-radius:2%;
+}
+.four {
+    height:200px;
+    background-color: black;
+    width:100%;
+}
+@media (max-width: 600px) {
+    .four {
+        background-color: white;
+    }
+}
+@media (min-width: 601px), (max-width: 750px) {
+    .four {
+        background-color: aqua;
+    }
+}
+@media (min-width: 751px), (max-width: 900px) {
+    .four {
+        background-color:blueviolet;
+    }
+}
+@media (min-width: 901px), (max-width: 1050px) {
+    .four {
+        background-color: cadetblue;
+    }
+}
+@media (min-width: 1050px) {
+    .four {
+        background-color: darksalmon;
+    }
+}
