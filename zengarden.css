@@ -52,7 +52,7 @@ abbr {
 
 /* specific divs */
 .page-wrapper { 
-	background: url(http://csszengarden.com/001/zen-bg.jpg) no-repeat top left; 
+	/*background: url(http://csszengarden.com/001/zen-bg.jpg) no-repeat top left; */
 	padding: 0 175px 0 110px;  
 	margin: 0; 
 	position: relative;
@@ -64,14 +64,12 @@ abbr {
 	}
 
 header h1 { 
-	background: transparent url(http://csszengarden.com/001/h1.gif) no-repeat top left;
-	margin-top: 10px;
+	background: transparent url(zen5.jpg) no-repeat top left;
+	margin: auto;
 	display: block;
-	width: 219px;
-	height: 87px;
-	float: left;
-
-	text-indent: 100%;
+	width: 226px;
+	height: 186px;
+    text-indent: 100%;
 	white-space: nowrap;
 	overflow: hidden;
 	}
@@ -91,6 +89,16 @@ header h2 {
 header {
 	padding-top: 20px;
 	height: 87px;
+}
+.header2 {
+    background-image: url("zen3.jpg");
+    display:block;
+    position:absolute;
+    top: 0;
+    left:0;
+    width:1587px;
+    height:500px;
+    
 }
 
 .summary {

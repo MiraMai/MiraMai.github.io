@@ -30,7 +30,6 @@
 }
 .four {
     height:200px;
-    background-color: black;
     width:100%;
 }
 @media (max-width: 600px) {
@@ -38,17 +37,17 @@
         background-color: white;
     }
 }
-@media (min-width: 601px), (max-width: 750px) {
+@media (min-width: 601px) and (max-width: 750px) {
     .four {
         background-color: aqua;
     }
 }
-@media (min-width: 751px), (max-width: 900px) {
+@media (min-width: 751px) and (max-width: 900px) {
     .four {
         background-color:blueviolet;
     }
 }
-@media (min-width: 901px), (max-width: 1050px) {
+@media (min-width: 901px) and (max-width: 1050px) {
     .four {
         background-color: cadetblue;
     }
@@ -56,5 +55,46 @@
 @media (min-width: 1050px) {
     .four {
         background-color: darksalmon;
+    }
+}
+.five {
+    display:none;
+}
+@media (max-width: 600px) {
+    .five {
+        display: inline;
+    }
+}
+.six {
+    display:none;
+}
+@media (min-width: 601px) and (max-width: 750px) {
+    .six {
+        display:inline;
+    }
+    
+}
+.seven {
+    display:none;
+}
+@media (min-width: 751px) and (max-width: 900px) {
+    .seven {
+        display: inline;
+    }
+}
+.eight {
+        display: none;
+    }
+@media (min-width: 901px) and (max-width: 1050px) {
+        .eight {
+            display: inline;
+        }
+    }
+    .nine {
+        display: none;
+}
+@media (min-width: 1050px) {
+    .nine {
+        display: inline;
     }
 }
