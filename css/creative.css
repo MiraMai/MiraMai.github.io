@@ -1,0 +1,130 @@
+/*!
+ * Start Bootstrap - Creative v3.3.7+1 (http://startbootstrap.com/template-overviews/creative)
+ * Copyright 2013-2016 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
+ */
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+body {
+  font-family: sans-serif;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    }
+a {
+  color: white;
+}
+
+i {
+  color: white;
+    }
+
+h4, h2, h3, h5, hr {
+        color: #D3C9A2;
+        font-family: sans-serif;
+    }
+header {
+  position: relative;
+  width: 100%;
+  min-height: auto;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  background-position: center;
+  background-image: url('../laptop.jpg');
+  text-align: center;
+  color: white;
+}
+header .header-content {
+  position: relative;
+  text-align: center;
+  padding: 100px 15px 100px;
+  width: 100%;
+  top: 10%;
+  background-color: rgba(211, 201, 162, 0.6);
+
+}
+header .arrow {
+  display: block;    
+  position: relative;
+  text-align: center;
+  width: 100%;    
+  top: 700px;
+  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(211, 201, 162, 0.3);
+}
+a:hover {
+    color: white;
+}
+.bg-primary {
+  background-color: #423D39;
+}
+
+.small {
+    display: none;
+}
+.exercises {
+    margin-top: 90px;
+}
+.container-fluid {
+    margin-left: 100px;
+    margin-right: 100px;
+} 
+#javascriptEx2, #groupProjects2 {
+    display: none;
+}
+#lastRow {
+             margin-bottom: 100px;
+         }  
+
+@media (min-width: 768px) {
+  header {
+    min-height: 100%;
+  }
+  header .header-content {
+    position: absolute;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    padding: 0 50px;
+  }
+  header .header-content .header-content-inner {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;  
+  }
+}
+
+@media (max-width: 768px) {
+    header .arrow {
+        display: none;  
+  }
+}
+@media (max-width: 735px) {
+    
+    #javascriptEx1, #groupProjects1 {
+        display: none;
+    }
+    #javascriptEx2, #groupProjects2 {
+        display: block;
+    }
+}
+@media (max-width: 526px) {
+    #portfolio1 {
+        display: none;
+    }
+    .small {
+        display: block;
+    }
+}
+@media(max-width: 760px) {
+             .container-fluid {
+                margin-left: 0px;
+                margin-right: 0px;
+    } 
+         } 
