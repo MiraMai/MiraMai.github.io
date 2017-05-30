@@ -45,16 +45,16 @@ header .header-content {
   text-align: center;
   padding: 100px 15px 100px;
   width: 100%;
-  top: 10%;
+  top: 12%;
   background-color: rgba(211, 201, 162, 0.6);
 
 }
 header .arrow {
-  display: block;    
-  position: relative;
-  text-align: center;
-  width: 100%;    
-  top: 700px;
+/*  display: block;    */
+  position: absolute;
+  text-align: center;    
+  width: 100%;
+  top: 90%;
   background-color: rgba(255, 255, 255, 0.2);
   background-color: rgba(211, 201, 162, 0.3);
 }
@@ -93,7 +93,7 @@ a:hover {
     transform: translateY(-50%);
     padding: 0 50px;
   }
-  header .header-content .header-content-inner {
+  header .header-content .arrow {
     max-width: 1000px;
     margin-left: auto;
     margin-right: auto;  
