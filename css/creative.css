@@ -75,6 +75,13 @@ a:hover {
     margin-left: 100px;
     margin-right: 100px;
 } 
+
+.footer {
+    margin-bottom: 50px;
+}
+.socialMedia {
+    margin-right: 7px;
+}
 #javascriptEx2, #groupProjects2 {
     display: none;
 }
