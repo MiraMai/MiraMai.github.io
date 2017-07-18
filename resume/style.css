@@ -1,0 +1,169 @@
+.title {
+    background-color: #7d7d4b;
+}
+
+.layer1 {
+    position:absolute;
+    z-index: 1;
+}
+
+.layer2 {
+    color: white;
+    position:absolute;
+    z-index: 2;
+}
+    
+    
+img {
+     margin-left: -15px; 
+}
+        
+.fixed {
+    position: fixed;
+    width: 50%;
+}
+    
+.scrollit {
+        float: right;
+        width: 50%;
+}
+    
+#ENbtn {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    z-index: 1;
+    color: white;
+    background-color: rgba(125, 125, 75, 0.5);
+    border-radius: 50%;
+    border: none;
+}   
+
+#SVbtn {
+    position: fixed;
+    bottom: 10px;
+    left: 45px;
+    z-index: 1;
+    color: white;
+    background-color: rgba(125, 125, 75, 0.5);
+    border-radius: 50%;
+    border: none;
+}
+
+a, a:visited, a:active {
+    color: #8B8001;
+    text-decoration: none;
+    }
+
+a:hover {
+    color: #DED675;
+    text-decoration: none;
+    }
+
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    opacity:0.9;
+    overflow-x: hidden;
+    transition: 0.8s;
+    padding-top: 60px;
+    text-align: center;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #a3a375;
+    display: block;
+    transition: 0.6s  
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+    .glyphicon {
+        padding-top: 10px;
+        padding-left: 5px;
+        font-size:40px;
+        cursor:pointer
+    }
+    
+.content {
+     padding: 50px;
+} 
+    
+body {
+    font-size: 16px;
+    line-height: 1.7;
+/*    letter-spacing: 0.5px;*/
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+/*        font-family: Verdana, Geneva, sans-serif;*/
+
+    }
+    
+h1, h2, h3, h5 {
+    font-family: 'Montserrat', sans-serif; 
+    }
+
+h1 {
+    color: white;
+}
+    
+h5 {
+    font-family: Georgia, serif;
+    font-size: 14pt;
+    color: #7d7d4b;
+    }
+
+    
+h4 {
+    font-size: 17pt;
+    font-family: Georgia, serif;
+    border-bottom: 1px dotted #a3a375;
+    }
+
+h6 {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 13pt;
+    color: #afaf83;
+    }
+    
+
+i, b {
+    color: #7d7d4b;
+    }
+
+.mellanrum {
+    margin-top: 80px;
+    }
+
+#linkedIn, #github {
+    color: #333333;
+    float: right;
+    margin-left: 5px;
+}
+
