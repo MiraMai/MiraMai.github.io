@@ -1,6 +1,8 @@
+/*
 .title {
     background-color: #7d7d4b;
 }
+*/
 
 .layer1 {
     position:absolute;
@@ -129,7 +131,7 @@ h1, h2, h3, h5 {
     }
 
 h1 {
-    color: white;
+    color: #505030;
 }
     
 h5 {
