@@ -1,9 +1,3 @@
-/*
-.title {
-    background-color: #7d7d4b;
-}
-*/
-
 .layer1 {
     position:absolute;
     z-index: 1;
@@ -29,7 +23,8 @@ img {
         float: right;
         width: 50%;
 }
-    
+
+
 #ENbtn {
     position: fixed;
     bottom: 10px;
@@ -103,21 +98,21 @@ a:hover {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
 }
-    .glyphicon {
-        padding-top: 10px;
-        padding-left: 5px;
-        font-size:40px;
-        cursor:pointer
+.glyphicon {
+     padding-top: 10px;
+     padding-left: 5px;
+     font-size:40px;
+     cursor:pointer;
     }
     
 .content {
-     padding: 50px;
-} 
-    
+    padding: 50px;
+ } 
+
 body {
     font-size: 16px;
     line-height: 1.7;
-/*    letter-spacing: 0.5px;*/
+    letter-spacing: 0.4px;
 }
 
 p {
@@ -163,9 +158,43 @@ i, b {
     margin-top: 80px;
     }
 
-#linkedIn, #github {
+.linkedIn, .github {
     color: #333333;
     float: right;
     margin-left: 5px;
 }
 
+@media (max-width: 1450px) {
+   .scrollit {
+        float: none;
+        width: 100%;
+    } 
+    .layer1 {
+    color: white;    
+    z-index: 2;
+    display: none;    
+    }
+    .layer2 {
+        display: none;
+    }
+    body {
+        background-image: url('me3.jpg');
+        background-size: cover;
+    }
+    .webPageTitle, #aboutMeId, #aboutMe, #skillsId, #skills, #educationId, #education, #employmentHistoryId, #employmentHistory, #languagesId, #languages, #contactMeId, #contactMe, #portfolioId, #portfolio  {
+        background-color: rgba(255, 255, 255, 0.9);
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 20px;
+    }
+    .socialLinks {
+        padding-bottom: 30px;
+    }
+    button {
+        display: none;
+    }    
+    h6 {
+    color: #8c8c5a;
+    }
+} 
+    
