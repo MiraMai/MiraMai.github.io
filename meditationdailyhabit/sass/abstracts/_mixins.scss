@@ -1,0 +1,21 @@
+// mixns are reusable pieces of code
+
+
+/* this mixin is the clearfix hack. We are using it because in 
+the grid system the row height cpllapses and becomes 0 because 
+all the elements inside of it are floated. So to fix that we are 
+using this hack 
+What this clearfix is doing is to append a pseudoelement after 
+the element(row in the grid case) which will clear these floats.*/
+@mixin clearfix {
+    &::after {
+        /* we have to specify the content property otherwise the 
+        pseudoelement will not appear on the page. And we want it
+        empty because we don't want to see this element. */
+        content: "";
+        // display: table is the standard version of te clearfix
+        display: table;
+        // this will clear the float properties
+        clear: both;
+    }
+}

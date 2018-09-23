@@ -1,0 +1,50 @@
+.row {
+    max-width: $grid-width;
+    background-color: pink;
+    // top and bottom: 0, and left and right: auto
+    margin: 0 auto;
+
+    // we select everything except the last child
+    &:not(:last-child) {
+        margin-bottom: $row-margin;
+    }
+
+    @include clearfix;
+
+    /* this is the attribute selector. We select all the 
+    elements with the attribute class="col". With ^ we mean 
+    all the class atributes starts with: col-... */
+    [class^="col-"] {
+        background-color: rosybrown;
+        float: left;
+
+        &:not(:last-child) {
+            margin-right: $col-margin;
+        }
+    }
+
+    // the numbers in the cols are percentages: 50% etc
+    // $grid-width - $col-margin = the width of .col-50
+    .col-50 {
+        // 100% of the width
+        // in order to use a variable in the calc function you have to wrap it in hash + curly brackets
+        width: calc((100% - #{$col-margin}) / 2 );
+        
+    }
+
+    .col-33 {
+        width: calc((100% - 2 * #{$col-margin}) / 3 );
+    }
+
+    .col-25 {
+        width: calc((100% - 3 * #{$col-margin}) / 4 );
+    }
+
+    .col-66 {
+        width: calc( 2 * ((100% - 2 * #{$col-margin}) / 3 ) + #{$col-margin});
+    }
+
+    .col-75 {
+        width: calc( 3 * ((100% - 3 * #{$col-margin}) / 4 ) + 2 *  #{$col-margin});
+    }
+}
