@@ -1,0 +1,88 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+/* 1rem = 10px, this makes it easier to divide all pixels with 10 that's why we're using it
+If we want to change the size of the website we just need to change the pixels in the html tag and all the rems of the website will scale accordingly.
+We changed the pixels to percentage so that the user will be able to change the default size. 100% is 16 pixels according to the default and 62.5% = 10/16, so 10 pixels translates to 62.5% */
+html {
+    /* font-size: 10px; */
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    line-height: 1.7;
+    color: $grey;
+    padding: .7rem;
+    /* we dont want any margins or paddings on any element that are applied by default by the browsers */
+    /* the margins and the paddings are not added to the total width and height that is specified for a box */
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 6rem;
+    padding-left: 1rem;
+}
+
+/*
+font-family: 'Raleway', sans-serif;
+font-family: 'Philosopher', sans-serif;
+font-family: 'Mallanna', sans-serif;
+font-family: 'Mandali', sans-serif;
+*/
+h2 {
+    font-size: 3.7rem;
+    font-family: 'Philosopher', sans-serif; 
+    margin-bottom: 5rem;
+}
+
+h3 {
+    font-size: 3.2rem;
+}
+
+h4 {
+    font-size: 2.9rem;
+}
+
+h5 {
+    font-size: 2.5rem;
+}
+
+h6 {
+    font-size: 2.1rem;
+}
+
+h7 {
+    font-size: 1.8rem;
+}
+
+p {
+    font-size: 1.6rem;
+}
+
+
+
+/* 
+font-family: 'Caveat', cursive;
+font-family: 'Miss Fajardose', cursive;
+font-family: 'Quicksand', sans-serif;
+font-family: 'Sacramento', cursive;
+font-family: 'Sunshiney', cursive;
+font-family: 'Ubuntu', sans-serif;
+font-family: 'Butterfly Kids', cursive;
+*/
+
+
+
+.image {
+    float: left;
+    position: relative;
+}
+p {
+    display: inline-block;
+}
+

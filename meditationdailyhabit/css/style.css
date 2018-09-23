@@ -10,6 +10,16 @@ html {
   /* font-size: 10px; */
   font-size: 62.5%; }
 
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+  color: #777;
+  padding: .7rem;
+  /* we dont want any margins or paddings on any element that are applied by default by the browsers */
+  /* the margins and the paddings are not added to the total width and height that is specified for a box */
+  box-sizing: border-box; }
+
 h1 {
   font-size: 6rem;
   padding-left: 1rem; }
@@ -43,16 +53,6 @@ h7 {
 p {
   font-size: 1.6rem; }
 
-body {
-  font-family: "Lato", sans-serif;
-  font-weight: 400;
-  line-height: 1.7;
-  color: #777;
-  padding: .7rem;
-  /* we dont want any margins or paddings on any element that are applied by default by the browsers */
-  /* the margins and the paddings are not added to the total width and height that is specified for a box */
-  box-sizing: border-box; }
-
 /* 
 font-family: 'Caveat', cursive;
 font-family: 'Miss Fajardose', cursive;
@@ -62,15 +62,6 @@ font-family: 'Sunshiney', cursive;
 font-family: 'Ubuntu', sans-serif;
 font-family: 'Butterfly Kids', cursive;
 */
-.header {
-  height: 50vh;
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.116), rgba(0, 0, 0, 0.747)), url(../img/header.jpg);
-  background-size: cover;
-  background-position: top;
-  font-family: 'Sacramento', cursive;
-  color: #e6b800;
-  font-size: 5.5rem; }
-
 .image {
   float: left;
   position: relative; }
@@ -78,7 +69,6 @@ font-family: 'Butterfly Kids', cursive;
 p {
   display: inline-block; }
 
-/* navigation */
 .navigation ul {
   list-style-type: none;
   margin: 0;
@@ -107,3 +97,12 @@ p {
 .navigation .active {
   color: #ff9900;
   border-bottom: 1px solid #ff9900; }
+
+.header {
+  height: 50vh;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.116), rgba(0, 0, 0, 0.747)), url(../img/header.jpg);
+  background-size: cover;
+  background-position: top;
+  font-family: 'Sacramento', cursive;
+  color: #e6b800;
+  font-size: 5.5rem; }
