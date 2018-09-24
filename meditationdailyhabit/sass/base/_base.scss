@@ -33,27 +33,34 @@ font-family: 'Raleway', sans-serif;
 font-family: 'Philosopher', sans-serif;
 font-family: 'Mallanna', sans-serif;
 font-family: 'Mandali', sans-serif;
+font-family: 'Spirax', cursive;
+font-family: 'PT Sans Caption', sans-serif;
 */
 h2 {
     font-size: 3.7rem;
-    font-family: 'Philosopher', sans-serif; 
-    margin-bottom: 5rem;
+    font-family: 'PT Sans Caption', sans-serif;
+    font-weight: 100;
+    margin-top: 5%; 
 }
 
 h3 {
-    font-size: 3.2rem;
+    font-size: 3.0rem;
+    font-family: 'PT Sans Caption', sans-serif;
+    font-weight: 100;
+    margin-top: 3%;
+    margin-bottom: 1%;
 }
 
 h4 {
-    font-size: 2.9rem;
-}
-
-h5 {
     font-size: 2.5rem;
 }
 
+h5 {
+    font-size: 2.2rem;
+}
+
 h6 {
-    font-size: 2.1rem;
+    font-size: 2rem;
 }
 
 h7 {
@@ -61,6 +68,11 @@ h7 {
 }
 
 p {
+    font-size: 1.6rem;
+    padding-bottom: 1.6rem;
+}
+
+ul li {
     font-size: 1.6rem;
 }
 
@@ -77,12 +89,4 @@ font-family: 'Butterfly Kids', cursive;
 */
 
 
-
-.image {
-    float: left;
-    position: relative;
-}
-p {
-    display: inline-block;
-}
 

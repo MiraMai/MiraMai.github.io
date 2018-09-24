@@ -1,0 +1,33 @@
+.logoColor {
+    color: $logo-color;
+}
+
+
+// LINKS
+a:link {
+    color: $logo-color;
+}
+
+a:visited {
+    color: $logo-color;
+}
+
+a:hover {
+    color:  #b38f00;
+}
+
+// NOTE
+.note {
+    background-color:  $note-color;
+    font-size: 1.4rem;    
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.Note {
+    font-weight: 700;
+}
+
+.bold {
+    font-weight: 800;
+}

@@ -1,6 +1,6 @@
 .row {
     max-width: $grid-width;
-    background-color: pink;
+    //background-color: pink;
     // top and bottom: 0, and left and right: auto
     margin: 0 auto;
 
@@ -15,7 +15,7 @@
     elements with the attribute class="col". With ^ we mean 
     all the class atributes starts with: col-... */
     [class^="col-"] {
-        background-color: rosybrown;
+        //background-color: rosybrown;
         float: left;
 
         &:not(:last-child) {
@@ -28,8 +28,11 @@
     .col-50 {
         // 100% of the width
         // in order to use a variable in the calc function you have to wrap it in hash + curly brackets
-        width: calc((100% - #{$col-margin}) / 2 );
-        
+        width: calc((100% - #{$col-margin}) / 2 );     
+    }
+
+    .col-100 {
+        width: 100%;
     }
 
     .col-33 {

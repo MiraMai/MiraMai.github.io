@@ -4,6 +4,10 @@ all the elements inside of it are floated. So to fix that we are
 using this hack 
 What this clearfix is doing is to append a pseudoelement after 
 the element(row in the grid case) which will clear these floats.*/
+/*
+$grid-width: 114rem;
+$row-margin: 8rem;
+$col-margin: 6rem;*/
 *, *::before, *::after {
   margin: 0;
   padding: 0;
@@ -35,28 +39,39 @@ font-family: 'Raleway', sans-serif;
 font-family: 'Philosopher', sans-serif;
 font-family: 'Mallanna', sans-serif;
 font-family: 'Mandali', sans-serif;
+font-family: 'Spirax', cursive;
+font-family: 'PT Sans Caption', sans-serif;
 */
 h2 {
   font-size: 3.7rem;
-  font-family: 'Philosopher', sans-serif;
-  margin-bottom: 5rem; }
+  font-family: 'PT Sans Caption', sans-serif;
+  font-weight: 100;
+  margin-top: 5%; }
 
 h3 {
-  font-size: 3.2rem; }
+  font-size: 3.0rem;
+  font-family: 'PT Sans Caption', sans-serif;
+  font-weight: 100;
+  margin-top: 3%;
+  margin-bottom: 1%; }
 
 h4 {
-  font-size: 2.9rem; }
-
-h5 {
   font-size: 2.5rem; }
 
+h5 {
+  font-size: 2.2rem; }
+
 h6 {
-  font-size: 2.1rem; }
+  font-size: 2rem; }
 
 h7 {
   font-size: 1.8rem; }
 
 p {
+  font-size: 1.6rem;
+  padding-bottom: 1.6rem; }
+
+ul li {
   font-size: 1.6rem; }
 
 /* 
@@ -68,12 +83,9 @@ font-family: 'Sunshiney', cursive;
 font-family: 'Ubuntu', sans-serif;
 font-family: 'Butterfly Kids', cursive;
 */
-.image {
+img.imgLeft {
   float: left;
-  position: relative; }
-
-p {
-  display: inline-block; }
+  margin-right: 3rem; }
 
 .navigation ul {
   list-style-type: none;
@@ -104,15 +116,38 @@ p {
   color: #ff9900;
   border-bottom: 1px solid #ff9900; }
 
+.logoColor {
+  color: #e6b800; }
+
+a:link {
+  color: #e6b800; }
+
+a:visited {
+  color: #e6b800; }
+
+a:hover {
+  color: #b38f00; }
+
+.note {
+  background-color: #fff0b3;
+  font-size: 1.4rem;
+  margin: 1rem;
+  padding: 1rem; }
+
+.Note {
+  font-weight: 700; }
+
+.bold {
+  font-weight: 800; }
+
 .row {
-  max-width: 114rem;
-  background-color: pink;
+  max-width: 87%;
   margin: 0 auto;
   /* this is the attribute selector. We select all the 
     elements with the attribute class="col". With ^ we mean 
     all the class atributes starts with: col-... */ }
   .row:not(:last-child) {
-    margin-bottom: 8rem; }
+    margin-bottom: 5%; }
   .row::after {
     /* we have to specify the content property otherwise the 
         pseudoelement will not appear on the page. And we want it
@@ -121,20 +156,21 @@ p {
     display: table;
     clear: both; }
   .row [class^="col-"] {
-    background-color: rosybrown;
     float: left; }
     .row [class^="col-"]:not(:last-child) {
-      margin-right: 6rem; }
+      margin-right: 2%; }
   .row .col-50 {
-    width: calc((100% - 6rem) / 2); }
+    width: calc((100% - 2%) / 2); }
+  .row .col-100 {
+    width: 100%; }
   .row .col-33 {
-    width: calc((100% - 2 * 6rem) / 3); }
+    width: calc((100% - 2 * 2%) / 3); }
   .row .col-25 {
-    width: calc((100% - 3 * 6rem) / 4); }
+    width: calc((100% - 3 * 2%) / 4); }
   .row .col-66 {
-    width: calc( 2 * ((100% - 2 * 6rem) / 3 ) + 6rem); }
+    width: calc( 2 * ((100% - 2 * 2%) / 3 ) + 2%); }
   .row .col-75 {
-    width: calc( 3 * ((100% - 3 * 6rem) / 4 ) + 2 *  6rem); }
+    width: calc( 3 * ((100% - 3 * 2%) / 4 ) + 2 *  2%); }
 
 .header {
   height: 50vh;
