@@ -14,31 +14,19 @@ var Header = function (_React$Component) {
   function Header(props) {
     _classCallCheck(this, Header);
 
-    var _this = _possibleConstructorReturn(this, (Header.__proto__ || Object.getPrototypeOf(Header)).call(this, props));
-
-    _this.state = { liked: false };
-    return _this;
+    return _possibleConstructorReturn(this, (Header.__proto__ || Object.getPrototypeOf(Header)).call(this, props));
   }
 
   _createClass(Header, [{
-    key: 'render',
+    key: "render",
     value: function render() {
-      if (this.state.liked) {
-        return 'You liked this.';
-      }
-
-      var styles = {
-        height: '10px',
-        color: 'red'
-      };
-
       return React.createElement(
-        'header',
-        { className: 'header' },
+        "header",
+        { className: "header" },
         React.createElement(
-          'h1',
-          { className: 'header__logo' },
-          'meditationdailyhabit'
+          "h1",
+          { className: "header__logo" },
+          "meditationdailyhabit"
         )
       );
     }
