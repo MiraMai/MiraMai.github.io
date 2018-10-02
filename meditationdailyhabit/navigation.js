@@ -1,101 +1,80 @@
-'use strict';
+//window.addEventListener('load', function() {
 
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+  let home = document.getElementById('home');
+  let navigation__home = document.getElementById('navigation__home');
 
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+  let daily_habit = document.getElementById('daily_habit');
+  let navigation__daily_habit = document.getElementById('navigation__daily_habit');
 
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+  let navigation___get_started = document.getElementById('navigation__get_started');
 
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+  let navigation__essentials = document.getElementById('navigation__essentials');
 
-var Navigation = function (_React$Component) {
-  _inherits(Navigation, _React$Component);
+  let navigation__reviews = document.getElementById('navigation__reviews');
 
-  function Navigation(props) {
-    _classCallCheck(this, Navigation);
+  let navigation__about = document.getElementById('navigation__about');
 
-    return _possibleConstructorReturn(this, (Navigation.__proto__ || Object.getPrototypeOf(Navigation)).call(this, props));
-  }
+  let navigation__blog = document.getElementById('navigation__blog');
+  
 
-  _createClass(Navigation, [{
-    key: "render",
-    value: function render() {
-      return React.createElement(
-        "navigation",
-        { className: "navigation" },
-        React.createElement(
-          "ul",
-          null,
-          React.createElement(
-            "li",
-            null,
-            React.createElement(
-              "a",
-              { className: "active", href: "#home" },
-              "Home"
-            )
-          ),
-          React.createElement(
-            "li",
-            null,
-            React.createElement(
-              "a",
-              { href: "#dailyHabit" },
-              "How to make meditation a daily habit"
-            )
-          ),
-          React.createElement(
-            "li",
-            null,
-            React.createElement(
-              "a",
-              { href: "#getStarted" },
-              "Get started"
-            )
-          ),
-          React.createElement(
-            "li",
-            null,
-            React.createElement(
-              "a",
-              { href: "#meditationEssentials" },
-              "Meditation essentials"
-            )
-          ),
-          React.createElement(
-            "li",
-            null,
-            React.createElement(
-              "a",
-              { href: "#reviews" },
-              "Reviews"
-            )
-          ),
-          React.createElement(
-            "li",
-            { style: { float: 'right' } },
-            React.createElement(
-              "a",
-              { href: "#about" },
-              "About"
-            )
-          ),
-          React.createElement(
-            "li",
-            { style: { float: 'right' } },
-            React.createElement(
-              "a",
-              { href: "#blog" },
-              "Blog"
-            )
-          )
-        )
-      );
-    }
-  }]);
+  
+  // DISPLAY
+  home.style.display = 'inline';
+  daily_habit.style.display = 'none';
 
-  return Navigation;
-}(React.Component);
+  // NAVIGATION STYLING
+  // home
+  navigation__home.style.color = '#ff9900';
+  navigation__home.style.borderBottom = '1px solid #ff9900';
+  // daily_habit
+  navigation__daily_habit.style.color = '#777';
+  navigation__daily_habit.style.borderBottom = '1px solid #bbb';
+  // get_started
+  navigation__get_started.style.color = '#777';
+  navigation__get_started.style.borderBottom = '1px solid #bbb';
+  // essentials
+  navigation__essentials.style.color = '#777';
+  navigation__essentials.style.borderBottom = '1px solid #bbb';
+  // reviews
+  navigation__reviews.style.color = '#777';
+  navigation__reviews.style.borderBottom = '1px solid #bbb';
+  // about
+  navigation__about.style.color = '#777';
+  navigation__about.style.borderBottom = '1px solid #bbb';
+  // blog
+  navigation__blog.style.color = '#777';
+  navigation__blog.style.borderBottom = '1px solid #bbb';
 
-var domContainer = document.querySelector('#navigation');
-ReactDOM.render(React.createElement(Navigation, null), domContainer);
+
+
+  // WHEN CLICKING ON "HOME"
+  navigation__home.addEventListener('click', function() {
+    
+        home.style.display = 'inline';
+        daily_habit.style.display = 'none'; 
+
+        navigation__home.style.color = '#ff9900';
+        navigation__home.style.borderBottom = '1px solid #ff9900';
+        //
+        navigation__daily_habit.style.color = '#777';
+        navigation__daily_habit.style.borderBottom = '1px solid #bbb';
+
+  });  
+
+  // WHEN CLICKING ON "HOW TO MAKE MEDITATION A DAILY HABIT"
+  navigation__daily_habit.addEventListener('click', function() {
+
+    home.style.display = 'none';    
+    daily_habit.style.display = 'inline';
+
+    navigation__home.style.color = '#777';
+    navigation__home.style.borderBottom = '1px solid #bbb';
+    //
+    navigation__daily_habit.style.color = '#ff9900';
+    navigation__daily_habit.style.borderBottom = '1px solid #ff9900';
+    
+  });   
+
+
+
+//});  
