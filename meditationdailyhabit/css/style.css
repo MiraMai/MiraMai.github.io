@@ -97,6 +97,7 @@ img.imgLeft {
 
 .navigation li {
   float: left;
+  border-bottom: 1px solid #bbb;
   margin-right: 1rem; }
 
 .navigation li a {

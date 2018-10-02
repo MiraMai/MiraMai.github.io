@@ -1,42 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
-
-        <!-- fonts for logotype -->
-        <link href="https://fonts.googleapis.com/css?family=Butterfly+Kids|Caveat|Miss+Fajardose|Quicksand|Sacramento|Sunshiney|Ubuntu" rel="stylesheet">
-
-        <!-- fonts for headings -->
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans|Source+Sans+Pro|Spirax|Mallanna|Mandali|Philosopher|Raleway|PT+Sans+Caption" rel="stylesheet">
-
-        <link rel="stylesheet" href="css/style.css">
-        <!-- <link rel="shortcut icon" type="image/png" href="img/favicon.png"> -->
-
-        <title>Meditationdailyhabit</title>
-    </head>
+    <head id="head"></head>
 
     <body>
         <div id="header"></div>
 
         <navigation class="navigation">
             <ul>
-                <li><a id="navigation__home">Home</a></li>
-                <li><a id="navigation__daily_habit">How to make meditation a daily habit</a></li>
-                <li><a id="navigation__get_started">Get started</a></li>
-                <li><a id="navigation__essentials">Meditation essentials</a></li>
-                <li><a id="navigation__reviews">Reviews</a></li>
-                <li style="float: right;"><a id="navigation__about">About</a></li>
-                <li style="float: right;"><a id="navigation__blog">Blog</a></li>
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="daily_habit.html">How to make meditation a daily habit</a></li>
+                <li><a href="#">Get started</a></li>
+                <li><a href="#">Meditation essentials</a></li>
+                <li><a href="#">Reviews</a></li>
+                <li style="float: right;"><a href="#">About</a></li>
+                <li style="float: right;"><a href="#">Blog</a></li>
               </ul>
         </navigation>
 
 
         <div id="home"></div>
-        <div id="daily_habit"></div>
   
 
 
@@ -118,12 +100,9 @@
   <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
 
   <!-- Load our React components. -->
+  <script src="head.js"></script>
   <script src="header.js"></script>
   <script src="home.js"></script>
-  <script src="daily_habit.js"></script>
-
-<!-- this is a simple javascript code, not react -->
-  <script src="navigation.js"></script>
 
 
     </body>
