@@ -19,3 +19,8 @@ the element(row in the grid case) which will clear these floats.*/
         clear: both;
     }
 }
+
+@mixin fonts {
+    font-family: 'PT Sans Caption', sans-serif;
+    font-weight: 100;
+}

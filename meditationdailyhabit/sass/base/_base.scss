@@ -38,25 +38,33 @@ font-family: 'PT Sans Caption', sans-serif;
 */
 h2 {
     font-size: 3.7rem;
-    font-family: 'PT Sans Caption', sans-serif;
-    font-weight: 100;
     margin-top: 5%; 
+
+    @include fonts;
 }
 
 h3 {
     font-size: 3.0rem;
-    font-family: 'PT Sans Caption', sans-serif;
-    font-weight: 100;
     margin-top: 3%;
     margin-bottom: 1%;
+
+    @include fonts;
 }
 
 h4 {
-    font-size: 2.5rem;
+    font-size: 2.7rem;
+    margin-top: 3%;
+    margin-bottom: 1%;
+
+    @include fonts;
 }
 
 h5 {
-    font-size: 2.2rem;
+    font-size: 2.4rem;
+    margin-top: 3%;
+    margin-bottom: 1%;
+
+    @include fonts;
 }
 
 h6 {

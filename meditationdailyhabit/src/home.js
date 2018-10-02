@@ -7,13 +7,13 @@ class Home extends React.Component {
 
   render() {
     return (
-        <div className="home">
+        <div>
 
             <div className="row">
                 <div className="col-100">
-                <h2>
-                    Home
-                </h2>
+                    <h2>
+                        Home
+                    </h2>
                 </div>
             </div>  
             

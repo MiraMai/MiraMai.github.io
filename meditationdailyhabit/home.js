@@ -22,7 +22,7 @@ var Home = function (_React$Component) {
         value: function render() {
             return React.createElement(
                 "div",
-                { className: "home" },
+                null,
                 React.createElement(
                     "div",
                     { className: "row" },

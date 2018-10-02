@@ -28,6 +28,32 @@ a:hover {
     font-weight: 700;
 }
 
+.quote {
+    background-color:  $note-color;
+    font-size: 1.8rem;
+    font-style: italic;
+    border-left: 4px solid $navigation_active-color;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.quotes {
+    font-size: 1.69rem;
+    font-style: italic;
+    font-weight: 550;
+}
+
 .bold {
     font-weight: 800;
 }
+
+.bigger {
+    font-size: 1.8rem;
+    font-weight: 550;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+

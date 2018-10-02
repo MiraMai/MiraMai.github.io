@@ -11,6 +11,10 @@
     float: left;
     border-bottom: 1px solid $menu-lines;
     margin-right: 1rem;
+
+    navigation__dropdown {
+        display: inline-block;
+    }
 }
 
 .navigation li a {
