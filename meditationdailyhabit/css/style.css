@@ -31,8 +31,8 @@ body {
   box-sizing: border-box; }
 
 h1 {
-  font-size: 6rem;
-  padding-left: 1rem; }
+  font-size: 4.5rem;
+  padding-left: 1.5rem; }
 
 /*
 font-family: 'Raleway', sans-serif;
@@ -44,7 +44,7 @@ font-family: 'PT Sans Caption', sans-serif;
 */
 h2 {
   font-size: 3.7rem;
-  margin-top: 5%;
+  margin-top: 8%;
   font-family: 'PT Sans Caption', sans-serif;
   font-weight: 100; }
 
@@ -93,16 +93,19 @@ font-family: 'Butterfly Kids', cursive;
 */
 img.imgLeft {
   float: left;
-  margin-right: 3rem; }
+  margin-right: 2rem;
+  margin-bottom: 1rem; }
 
 img.imgRight {
   float: right;
-  margin-right: 3rem; }
+  margin-left: 2rem;
+  margin-bottom: 1rem; }
 
 img.imgcenter {
   display: block;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  margin-bottom: 1rem; }
 
 .navigation ul {
   list-style-type: none;
@@ -116,8 +119,6 @@ img.imgcenter {
   float: left;
   border-bottom: 1px solid #bbb;
   margin-right: 1rem; }
-  .navigation li navigation__dropdown {
-    display: inline-block; }
 
 .navigation li a {
   display: block;
@@ -132,8 +133,81 @@ img.imgcenter {
   transform: translateY(-0.2rem) scale(1.1); }
 
 .navigation .active {
-  color: #ff9900;
-  border-bottom: 1px solid #ff9900; }
+  color: #ff9900; }
+
+.navigation__dropdown {
+  float: left;
+  overflow: hidden; }
+  .navigation__dropdown .navigation__dropdown-link {
+    border: none;
+    outline: none;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    /* Important for vertical align on mobile phones */
+    margin: 0;
+    /* Important for vertical align on mobile phones */ }
+    .navigation__dropdown .navigation__dropdown-link-dropdownContent {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      z-index: 1; }
+    .navigation__dropdown .navigation__dropdown-link-dropdownContent a {
+      float: none;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      text-align: left; }
+  .navigation__dropdown:hover .navigation__dropdown-link-dropdownContent {
+    display: block; }
+
+.search_by_category {
+  font-size: 2.4rem;
+  padding: 2rem; }
+
+.smth {
+  color: white; }
+
+.list_in_sidebar {
+  list-style-type: none;
+  padding: 0 2rem 2rem 2rem; }
+
+.sidebar {
+  margin-top: 20%;
+  max-width: 140rem;
+  /* this is the attribute selector. We select all the 
+    elements with the attribute class="col". With ^ we mean 
+    all the class atributes starts with: col-... */ }
+  .sidebar:not(:last-child) {
+    margin-bottom: 5rem; }
+  .sidebar::after {
+    /* we have to specify the content property otherwise the 
+        pseudoelement will not appear on the page. And we want it
+        empty because we don't want to see this element. */
+    content: "";
+    display: table;
+    clear: both; }
+  .sidebar [class^="col-"] {
+    float: left; }
+    .sidebar [class^="col-"]:not(:last-child) {
+      margin-right: 2rem; }
+  .sidebar .col-50 {
+    width: calc((100% - 2rem) / 2); }
+  .sidebar .col-100 {
+    width: 100%; }
+  .sidebar .col-33 {
+    width: calc((100% - 2 * 2rem) / 3); }
+  .sidebar .col-25 {
+    width: calc((100% - 3 * 2rem) / 4); }
+  .sidebar .col-66 {
+    width: calc( 2 * ((100% - 2 * 2rem) / 3 ) + 2rem);
+    background-color: #f8f2ec;
+    border-radius: .2rem;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); }
+  .sidebar .col-75 {
+    width: calc( 3 * ((100% - 3 * 2rem) / 4 ) + 2 *  2rem); }
 
 .logoColor {
   color: #e6b800; }
@@ -180,13 +254,13 @@ a:hover {
   text-decoration: underline; }
 
 .row {
-  max-width: 87%;
+  max-width: 140rem;
   margin: 0 auto;
   /* this is the attribute selector. We select all the 
     elements with the attribute class="col". With ^ we mean 
     all the class atributes starts with: col-... */ }
   .row:not(:last-child) {
-    margin-bottom: 5%; }
+    margin-bottom: 5rem; }
   .row::after {
     /* we have to specify the content property otherwise the 
         pseudoelement will not appear on the page. And we want it
@@ -197,19 +271,19 @@ a:hover {
   .row [class^="col-"] {
     float: left; }
     .row [class^="col-"]:not(:last-child) {
-      margin-right: 2%; }
+      margin-right: 2rem; }
   .row .col-50 {
-    width: calc((100% - 2%) / 2); }
+    width: calc((100% - 2rem) / 2); }
   .row .col-100 {
     width: 100%; }
   .row .col-33 {
-    width: calc((100% - 2 * 2%) / 3); }
+    width: calc((100% - 2 * 2rem) / 3); }
   .row .col-25 {
-    width: calc((100% - 3 * 2%) / 4); }
+    width: calc((100% - 3 * 2rem) / 4); }
   .row .col-66 {
-    width: calc( 2 * ((100% - 2 * 2%) / 3 ) + 2%); }
+    width: calc( 2 * ((100% - 2 * 2rem) / 3 ) + 2rem); }
   .row .col-75 {
-    width: calc( 3 * ((100% - 3 * 2%) / 4 ) + 2 *  2%); }
+    width: calc( 3 * ((100% - 3 * 2rem) / 4 ) + 2 *  2rem); }
 
 .header {
   height: 50vh;
@@ -218,4 +292,5 @@ a:hover {
   background-position: top;
   font-family: 'Sacramento', cursive;
   color: #e6b800;
-  font-size: 5.5rem; }
+  font-family: 'Miss Fajardose', cursive;
+  font-family: 'Raleway', sans-serif; }

@@ -23,9 +23,9 @@ var Head = function (_React$Component) {
             return React.createElement(
                 "div",
                 null,
-                React.createElement("meta", { charset: "UTF-8" }),
+                React.createElement("meta", { charSet: "UTF-8" }),
                 React.createElement("meta", { name: "viewport", content: "width=device-width, initial-scale=1.0" }),
-                React.createElement("meta", { "http-equiv": "X-UA-Compatible", content: "ie=edge" }),
+                React.createElement("meta", { httpEquiv: "X-UA-Compatible", content: "ie=edge" }),
                 React.createElement("link", { href: "https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900", rel: "stylesheet" }),
                 React.createElement("link", { href: "https://fonts.googleapis.com/css?family=Butterfly+Kids|Caveat|Miss+Fajardose|Quicksand|Sacramento|Sunshiney|Ubuntu", rel: "stylesheet" }),
                 React.createElement("link", { href: "https://fonts.googleapis.com/css?family=Open+Sans|Source+Sans+Pro|Spirax|Mallanna|Mandali|Philosopher|Raleway|PT+Sans+Caption", rel: "stylesheet" }),
