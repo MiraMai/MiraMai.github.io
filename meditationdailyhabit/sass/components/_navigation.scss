@@ -1,4 +1,4 @@
-.navigation ul {
+/*.navigation ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -23,6 +23,7 @@
     transition: transform .3s; 
 }
 
+
 .navigation li a:hover:not(.active) {
     transform: translateY(-0.2rem) scale(1.1);
 }
@@ -42,8 +43,8 @@
         outline: none;
         padding: 14px 16px;
         background-color: inherit;
-        font-family: inherit; /* Important for vertical align on mobile phones */
-        margin: 0; /* Important for vertical align on mobile phones */
+        font-family: inherit; 
+        margin: 0;
 
         &-dropdownContent {
             display: none;
@@ -58,7 +59,6 @@
             float: none;
             padding: 12px 16px;
             text-decoration: none;
-            display: block;
             text-align: left;
         }
 
@@ -70,3 +70,118 @@
 }
 
 
+
+
+.navigation li a.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.navigation li a .tooltiptext {
+    //visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: .2rem;
+    padding: 5px 0;
+    
+    position: absolute;
+    z-index: 1;
+    top: 1rem;
+    left: 95%;
+}
+
+.navigation li a.tooltip:hover .navigation li a.tooltiptext {
+    visibility: visible;
+}
+
+*/
+.navigation {
+    max-width: 100%;
+    margin: 0 auto; 
+
+    @include clearfix;
+}
+
+ul#navMenu {
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    position: relative;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+    
+ul#navMenu ul {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    display: none;
+    padding: 0px;
+    margin: 0px;
+}
+    
+ul#navMenu li {
+    display: inline;
+    float: left;
+    position: relative;
+    border-bottom: 1px solid $menu-lines;
+    margin-right: 1rem;
+}
+    
+ul#navMenu a {
+    font-size: 1.4rem;
+    color: $grey;
+    text-align: center;
+    padding: 1.4rem 1.6rem;
+    text-decoration: none;
+    float: left;
+    transition: transform .3s;
+}
+    
+ul#navMenu a:hover:not(.active) {
+    transform: translateY(-0.2rem) scale(1.1);
+}
+
+ul#navMenu a.active {
+    color: $navigation_active-color;
+    //border-bottom: 1px solid $navigation_active-color;    
+}
+
+ul#navMenu li:hover ul {
+    display: block;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;  
+    max-width: 30rem;
+}
+       
+ul#navMenu ul a {
+    min-width: 30rem;
+    text-transform: capitalize;
+}
+
+ul#navMenu ul.third a {
+    //font-size: 1.2rem;
+    color: $light-grey;
+}
+       
+ul#navMenu ul li {
+    display: block;
+    margin: 0px;
+}
+
+ul#navMenu ul ul {
+    top: 0;
+    left: 100%;
+}
+            
+ul#navMenu li:hover ul ul {
+    display:none;
+}
+            
+ul#navMenu ul li:hover ul {
+    display:block;
+}
