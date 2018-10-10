@@ -1,16 +1,22 @@
 img.imgLeft {
+    width: 40%;
+    height: auto;
     float: left;
     margin-right: 2rem;
     margin-bottom: 1rem;
 }
 
 img.imgRight {
+    width: 40%;
+    height: auto;
     float: right;
     margin-left: 2rem;
     margin-bottom: 1rem;
 }
 
 img.imgcenter {
+    width: 100%;
+    height: auto;
     display: block;
     margin-left: auto;
     margin-right: auto;

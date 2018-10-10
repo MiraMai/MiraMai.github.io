@@ -45,7 +45,11 @@ var Home = function (_React$Component) {
                         React.createElement(
                             "div",
                             { className: "col-100" },
-                            React.createElement("img", { src: "img/home.jpg", alt: "amorgos_beach", className: "imgLeft" }),
+                            React.createElement("img", { srcset: "img/home.jpg 300w, img/home_small.jpg 150w",
+                                sizes: "(max-width: 109em) 22vw, (max-width: 75em) 26vw, (max-width: 31em) 25vw, 300px",
+                                alt: "amorgos_beach",
+                                className: "imgLeft",
+                                src: "img/home.jpg" }),
                             React.createElement(
                                 "p",
                                 null,

@@ -2,6 +2,8 @@
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
@@ -45,13 +47,21 @@ var Dailyhabit = function (_React$Component) {
                         React.createElement(
                             "div",
                             { className: "col-100" },
-                            React.createElement("img", { src: "img/daily_habit/girl-sitting-on-veranda.jpg", alt: "girl sitting on veranda" }),
+                            React.createElement("img", _defineProperty({ src: "img/daily_habit/girl-sitting-on-veranda.jpg 900w, img/daily_habit/girl-sitting-on-veranda_small.jpg 400w",
+                                sizes: "(max-width: 109em) 53vw, (max-width: 75em) 65vw, (max-width: 31em) 100vw, 900px",
+                                alt: "girl sitting on veranda",
+                                className: "imgcenter"
+                            }, "src", "img/daily_habit/girl-sitting-on-veranda.jpg")),
                             React.createElement(
                                 "h3",
                                 null,
                                 " Why is it so difficult to make meditation a daily habit?"
                             ),
-                            React.createElement("img", { src: "img/daily_habit/relax.jpg", alt: "girl thinking", className: "imgRight" }),
+                            React.createElement("img", _defineProperty({ src: "img/daily_habit/relax.jpg 426w, img/daily_habit/relax_small.jpg 200w",
+                                sizes: "(max-width: 109em) 22vw, (max-width: 75em) 26vw, (max-width: 31em) 25vw, 426px",
+                                alt: "girl thinking",
+                                className: "imgRight"
+                            }, "src", "img/daily_habit/relax.jpg")),
                             React.createElement(
                                 "p",
                                 null,
@@ -111,7 +121,11 @@ var Dailyhabit = function (_React$Component) {
                                 null,
                                 "How to think to make it happen!"
                             ),
-                            React.createElement("img", { src: "img/daily_habit/woman_meditating.jpg", alt: "happy woman meditating" }),
+                            React.createElement("img", _defineProperty({ src: "img/daily_habit/woman_meditating.jpg 848w, img/daily_habit/woman_meditating_small.jpg 400w",
+                                sizes: "(max-width: 109em) 49vw, (max-width: 75em) 70vw, (max-width: 31em) 100vw, 848px",
+                                alt: "girl sitting on veranda",
+                                className: "imgcenter"
+                            }, "src", "img/daily_habit/woman_meditating.jpg")),
                             React.createElement(
                                 "p",
                                 null,

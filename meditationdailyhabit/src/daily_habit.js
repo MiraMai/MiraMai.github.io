@@ -20,10 +20,20 @@ class  Dailyhabit extends React.Component {
 
                 <div className="row">
                     <div className="col-100">
-                        <img src="img/daily_habit/girl-sitting-on-veranda.jpg" alt="girl sitting on veranda" />
+
+                        <img src="img/daily_habit/girl-sitting-on-veranda.jpg 900w, img/daily_habit/girl-sitting-on-veranda_small.jpg 400w"
+                        sizes="(max-width: 109em) 53vw, (max-width: 75em) 65vw, (max-width: 31em) 100vw, 900px"
+                        alt="girl sitting on veranda"
+                        className="imgcenter"
+                        src="img/daily_habit/girl-sitting-on-veranda.jpg" />
 
                         <h3> Why is it so difficult to make meditation a daily habit?</h3>
-                        <img src="img/daily_habit/relax.jpg" alt="girl thinking" className="imgRight" />
+                        <img src="img/daily_habit/relax.jpg 426w, img/daily_habit/relax_small.jpg 200w"
+                        sizes="(max-width: 109em) 22vw, (max-width: 75em) 26vw, (max-width: 31em) 25vw, 426px"
+                        alt="girl thinking"
+                        className="imgRight"
+                        src="img/daily_habit/relax.jpg" />
+
                 
                         <p>Well, I believe it's difficult to put any new habit into our lives and it’s even more difficult when this habit doesn't "fit" with the rhythm of our everyday life.</p>
                         <p>I was always very busy and stressed in my everyday life, that even if there were moments that I didn’t have so much to do, I was still in this mode. I was so used to be doing and thinking something constantly that being in another state didn’t even exist in my mind. That’s why it’s extremely difficult for many people to take a pause in the middle of the day and simply stop thinking.</p>
@@ -43,7 +53,13 @@ class  Dailyhabit extends React.Component {
                         </p>
 
                         <h4>How to think to make it happen!</h4>
-                        <img src="img/daily_habit/woman_meditating.jpg" alt="happy woman meditating" />
+
+                        <img src="img/daily_habit/woman_meditating.jpg 848w, img/daily_habit/woman_meditating_small.jpg 400w"
+                            sizes="(max-width: 109em) 49vw, (max-width: 75em) 70vw, (max-width: 31em) 100vw, 848px"
+                            alt="girl sitting on veranda"
+                            className="imgcenter"
+                            src="img/daily_habit/woman_meditating.jpg" />
+
                         <p>It doesn’t matter if you meditate only for 5 minutes per day as long as you do it <span className="bigger">every day!</span> It is very difficult to stay longer anyways, if you are a novice. Meditation is something that happens slowly and you have to build it every day, gradually so that you will be able to stay longer without forcing and pressuring  too much yourself.</p>
                         <p>You can even start with 3 minutes per day if you feel that 5 are too much. Between 3 to 10 minutes is a good start. Stay how long it feels good to you.</p>
                 

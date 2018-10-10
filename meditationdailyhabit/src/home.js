@@ -20,8 +20,13 @@ class Home extends React.Component {
             
                 <div className="row">
                     <div className="col-100">
-                        <img src="img/home.jpg" alt="amorgos_beach" className="imgLeft" />
-                  
+                    
+                        <img srcset="img/home.jpg 300w, img/home_small.jpg 150w"
+                             sizes="(max-width: 109em) 22vw, (max-width: 75em) 26vw, (max-width: 31em) 25vw, 300px"   
+                             alt="amorgos_beach"
+                             className="imgLeft"
+                             src="img/home.jpg" />
+
                         <p><span className="logoColor">Meditationdailyhabit</span>  is a result of my passion about meditation and my will to help other people establish a practice in their daily life. The information and instructions in this website originate from my own experience in meditation.</p>
                         <p><span className="logoColor">Meditationdailyhabit</span> is not supporting any specific meditation technique but most likely a gathering of details from many traditions and techniques. I believe that following a technique is essential for one's development but I also believe that it's not necessary to follow strictly one specific technique. All of us are unique, therefore what works for each of us best, is different.</p>
                         <p>Therefore, having a basic guideline about what to do exactly in your practice is very important; but the details included in the guideline is your decision.
