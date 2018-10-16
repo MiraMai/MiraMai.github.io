@@ -5,6 +5,16 @@ using this hack
 What this clearfix is doing is to append a pseudoelement after 
 the element(row in the grid case) which will clear these floats.*/
 /*
+
+0 - 435px *** phone --> XXS (435/16 = 27.18em)
+0 - 600px *** phone --> XS  (600/16 = 37.5em)
+601 - 900px *** tablet portrait --> S (56.25em)
+901px - 1200px *** tablet landscape --> M (75em)
+1201px - 1800px *** normal styles --> L (112.5em)
+1801px + *** big desktop --> XL ()
+
+*/
+/*
 $grid-width: 114rem;
 $row-margin: 8rem;
 $col-margin: 6rem;*/
@@ -19,6 +29,12 @@ We changed the pixels to percentage so that the user will be able to change the 
 html {
   /* font-size: 10px; */
   font-size: 62.5%; }
+  @media (max-width: 56.25em) {
+    html {
+      font-size: 70%; } }
+  @media (max-width: 37.5em) {
+    html {
+      font-size: 80%; } }
 
 body {
   font-family: "Lato", sans-serif;
@@ -97,6 +113,9 @@ img.imgLeft {
   float: left;
   margin-right: 2rem;
   margin-bottom: 1rem; }
+  @media (max-width: 27.18em) {
+    img.imgLeft {
+      width: 100%; } }
 
 img.imgRight {
   width: 40%;
@@ -104,6 +123,9 @@ img.imgRight {
   float: right;
   margin-left: 2rem;
   margin-bottom: 1rem; }
+  @media (max-width: 27.18em) {
+    img.imgRight {
+      width: 100%; } }
 
 img.imgcenter {
   width: 100%;
@@ -409,6 +431,9 @@ a:hover {
     width: calc((100% - 3 * 2rem) / 4); }
   .row .col-66 {
     width: calc( 2 * ((100% - 2 * 2rem) / 3 ) + 2rem); }
+    @media (max-width: 56.25em) {
+      .row .col-66 {
+        width: 100%; } }
   .row .col-75 {
     width: calc( 3 * ((100% - 3 * 2rem) / 4 ) + 2 *  2rem); }
 

@@ -10,6 +10,15 @@ We changed the pixels to percentage so that the user will be able to change the 
 html {
     /* font-size: 10px; */
     font-size: 62.5%;
+
+    // always write the larger media queries before the smaller
+    @include respond(S) {
+        font-size: 70%;
+    }
+
+    @include respond(XS) {
+        font-size: 80%;
+    }
 }
 
 body {

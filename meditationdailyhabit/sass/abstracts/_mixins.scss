@@ -24,3 +24,44 @@ the element(row in the grid case) which will clear these floats.*/
     font-family: 'PT Sans Caption', sans-serif;
     font-weight: 100;
 }
+
+
+// MEDIA QUERIES
+/*
+
+0 - 435px *** phone --> XXS (435/16 = 27.18em)
+0 - 600px *** phone --> XS  (600/16 = 37.5em)
+601 - 900px *** tablet portrait --> S (56.25em)
+901px - 1200px *** tablet landscape --> M (75em)
+1201px - 1800px *** normal styles --> L (112.5em)
+1801px + *** big desktop --> XL ()
+
+*/
+
+@mixin respond($breakpoint) {
+
+    @if $breakpoint == XXS {
+        // smaller than
+        @media (max-width: 27.18em) { @content }; //435px
+   }
+   
+   // look at _base.scss line 14
+   @if $breakpoint == XS {
+        // smaller than
+        @media (max-width: 37.5em) { @content }; //600px
+   }
+   
+   @if $breakpoint == S {
+        @media (max-width: 56.25em) { @content }; //900px
+    } 
+
+    @if $breakpoint == M {
+        @media (max-width: 75em) { @content }; //1200px
+    } 
+
+    @if $breakpoint == L {
+        // larger than
+        @media (min-width: 112.5em) { @content }; //1800px
+    } 
+
+}

@@ -47,6 +47,10 @@
 
     .col-66 {
         width: calc( 2 * ((100% - 2 * #{$col-margin}) / 3 ) + #{$col-margin});
+
+        @include respond(S) {
+            width: 100%;
+        }
     }
 
     .col-75 {

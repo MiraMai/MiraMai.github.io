@@ -4,6 +4,10 @@ img.imgLeft {
     float: left;
     margin-right: 2rem;
     margin-bottom: 1rem;
+
+    @include respond(XXS) {
+        width: 100%;
+    }
 }
 
 img.imgRight {
@@ -12,6 +16,10 @@ img.imgRight {
     float: right;
     margin-left: 2rem;
     margin-bottom: 1rem;
+
+    @include respond(XXS) {
+        width: 100%;
+    }
 }
 
 img.imgcenter {
