@@ -1,102 +1,24 @@
-/*.navigation ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
-
-.navigation li {
-    float: left;
-    border-bottom: 1px solid $menu-lines;
-    margin-right: 1rem;
-}
-
-.navigation li a {
+#navigation {
     display: block;
-    font-size: 1.4rem;
-    color: $grey;
-    text-align: center;
-    padding: 1.4rem 1.6rem;
-    text-decoration: none;
-    transition: transform .3s; 
-}
 
-
-.navigation li a:hover:not(.active) {
-    transform: translateY(-0.2rem) scale(1.1);
-}
-
-.navigation .active {
-    color: $navigation_active-color;
-    //border-bottom: 1px solid $navigation_active-color;    
-}
-
-
-.navigation__dropdown {
-    float: left;
-    overflow: hidden;
-
-    .navigation__dropdown-link {
-        border: none;
-        outline: none;
-        padding: 14px 16px;
-        background-color: inherit;
-        font-family: inherit; 
-        margin: 0;
-
-        &-dropdownContent {
-            display: none;
-            position: absolute;
-            background-color: #f9f9f9;
-            min-width: 160px;
-            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-            z-index: 1;
-        }
-
-        &-dropdownContent a {
-            float: none;
-            padding: 12px 16px;
-            text-decoration: none;
-            text-align: left;
-        }
-
+    @include respond(M) {
+        display: none;
     }
+}
 
-    &:hover &-link-dropdownContent {
+#navigationmobile {
+    display: none;
+
+    @include respond(M) {
         display: block;
     }
 }
 
-
-
-
-.navigation li a.tooltip {
-    position: relative;
-    display: inline-block;
+.menu {
+    font-size: 5rem;
+    color:   #cccccc;
 }
 
-.navigation li a .tooltiptext {
-    //visibility: hidden;
-    width: 120px;
-    background-color: black;
-    color: #fff;
-    text-align: center;
-    border-radius: .2rem;
-    padding: 5px 0;
-    
-    position: absolute;
-    z-index: 1;
-    top: 1rem;
-    left: 95%;
-}
-
-.navigation li a.tooltip:hover .navigation li a.tooltiptext {
-    visibility: visible;
-}
-
-*/
 .navigation {
     max-width: 100%;
     margin: 0 auto; 
