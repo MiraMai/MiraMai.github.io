@@ -5,11 +5,11 @@ let daily_habit_desktop = document.getElementById('daily_habit_desktop');
 let daily_habit = document.getElementById('daily_habit');  
 
 
-   if(window.location.pathname === "/index.html") {
+   if(window.location.pathname === "/meditationdailyhabit/index.html") {
     home_desktop.className = 'active';
     console.log('found index');
     } 
-    if(window.location.pathname === "/daily_habit.html") {
+    if(window.location.pathname === "/meditationdailyhabit/daily_habit.html") {
         daily_habit_desktop.className = 'active';
         console.log('found pathname');
     } else {
