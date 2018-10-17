@@ -17,11 +17,11 @@ let daily_habit = document.getElementById('daily_habit');
     }
 
 home_desktop.addEventListener('click', function() {
-    window.location.pathname = "/index.html"
+    window.location.pathname = "/meditationdailyhabit/index.html"
 });
 
 daily_habit_desktop.addEventListener('click', function() {
-    window.location.pathname = "/daily_habit.html"
+    window.location.pathname = "/meditationdailyhabit/daily_habit.html"
     
 });
 
