@@ -25,36 +25,44 @@ var Navigation = function (_React$Component) {
                 { className: "navigation" },
                 React.createElement(
                     "ul",
-                    null,
+                    { id: "navMenu" },
                     React.createElement(
                         "li",
                         null,
                         React.createElement(
                             "a",
-                            { className: "active", href: "index.html" },
+                            { id: "home_desktop" },
                             "Home"
                         )
                     ),
                     React.createElement(
                         "li",
-                        { className: "navigation__dropdown" },
+                        null,
                         React.createElement(
                             "a",
-                            { href: "daily_habit.html", className: "navigation__dropdown-link" },
+                            { id: "daily_habit_desktop" },
                             "How to make meditation a daily habit"
                         ),
                         React.createElement(
-                            "div",
-                            { className: "navigation__dropdown-link-dropdownContent" },
+                            "ul",
+                            null,
                             React.createElement(
-                                "a",
-                                { href: "#" },
-                                "Establishing your practice"
+                                "li",
+                                null,
+                                React.createElement(
+                                    "a",
+                                    { href: "#" },
+                                    "Establishing your practice"
+                                )
                             ),
                             React.createElement(
-                                "a",
-                                { href: "#" },
-                                "Meditation and benefits"
+                                "li",
+                                null,
+                                React.createElement(
+                                    "a",
+                                    { href: "#" },
+                                    "Meditation and benefits"
+                                )
                             )
                         )
                     ),
@@ -65,6 +73,28 @@ var Navigation = function (_React$Component) {
                             "a",
                             { href: "#" },
                             "Get started"
+                        ),
+                        React.createElement(
+                            "ul",
+                            null,
+                            React.createElement(
+                                "li",
+                                null,
+                                React.createElement(
+                                    "a",
+                                    { href: "#" },
+                                    "Stage 1 - Cultivating Relaxation"
+                                )
+                            ),
+                            React.createElement(
+                                "li",
+                                null,
+                                React.createElement(
+                                    "a",
+                                    { href: "#" },
+                                    "Stage 2 - Directing your Attention"
+                                )
+                            )
                         )
                     ),
                     React.createElement(
@@ -74,33 +104,211 @@ var Navigation = function (_React$Component) {
                             "a",
                             { href: "#" },
                             "Meditation essentials"
+                        ),
+                        React.createElement(
+                            "ul",
+                            null,
+                            React.createElement(
+                                "li",
+                                null,
+                                React.createElement(
+                                    "a",
+                                    { href: "#" },
+                                    "Meditation Instructions"
+                                ),
+                                React.createElement(
+                                    "ul",
+                                    { "class": "third" },
+                                    React.createElement(
+                                        "li",
+                                        null,
+                                        React.createElement(
+                                            "a",
+                                            { href: "#" },
+                                            "Basic Meditation Instructions"
+                                        )
+                                    ),
+                                    React.createElement(
+                                        "li",
+                                        null,
+                                        React.createElement(
+                                            "a",
+                                            { href: "#" },
+                                            "How to Sit while Meditating"
+                                        )
+                                    ),
+                                    React.createElement(
+                                        "li",
+                                        null,
+                                        React.createElement(
+                                            "a",
+                                            { href: "#" },
+                                            "How to Start a Meditation Practice"
+                                        )
+                                    ),
+                                    React.createElement(
+                                        "li",
+                                        null,
+                                        React.createElement(
+                                            "a",
+                                            { href: "#" },
+                                            "My 7 Days of Meditation Schedule"
+                                        )
+                                    ),
+                                    React.createElement(
+                                        "li",
+                                        null,
+                                        React.createElement(
+                                            "a",
+                                            { href: "#" },
+                                            "Meditation Object"
+                                        )
+                                    ),
+                                    React.createElement(
+                                        "li",
+                                        null,
+                                        React.createElement(
+                                            "a",
+                                            { href: "#" },
+                                            "Finding your Intention"
+                                        )
+                                    )
+                                )
+                            ),
+                            React.createElement(
+                                "li",
+                                null,
+                                React.createElement(
+                                    "a",
+                                    { href: "#" },
+                                    "Meditation Assistance"
+                                ),
+                                React.createElement(
+                                    "ul",
+                                    { "class": "third" },
+                                    React.createElement(
+                                        "li",
+                                        null,
+                                        React.createElement(
+                                            "a",
+                                            { href: "#" },
+                                            "How to Stay Motivated Towards Meditation"
+                                        )
+                                    ),
+                                    React.createElement(
+                                        "li",
+                                        null,
+                                        React.createElement(
+                                            "a",
+                                            { href: "#" },
+                                            "How to Deal with Distractions when Meditating - Get Rid of the Negative Feelings"
+                                        )
+                                    ),
+                                    React.createElement(
+                                        "li",
+                                        null,
+                                        React.createElement(
+                                            "a",
+                                            { href: "#" },
+                                            "Meditation and Boredom - How to Deal with it"
+                                        )
+                                    )
+                                )
+                            )
                         )
                     ),
                     React.createElement(
                         "li",
-                        null,
+                        { style: { float: 'right' } },
                         React.createElement(
                             "a",
                             { href: "#" },
-                            "Reviews"
+                            "About me"
                         )
                     ),
                     React.createElement(
                         "li",
-                        null,
-                        React.createElement(
-                            "a",
-                            { href: "#" },
-                            "About"
-                        )
-                    ),
-                    React.createElement(
-                        "li",
-                        null,
+                        { style: { float: 'right' } },
                         React.createElement(
                             "a",
                             { href: "#" },
                             "Blog"
+                        )
+                    ),
+                    React.createElement(
+                        "li",
+                        { style: { float: 'right' } },
+                        React.createElement(
+                            "a",
+                            { href: "#" },
+                            "Reviews"
+                        ),
+                        React.createElement(
+                            "ul",
+                            null,
+                            React.createElement(
+                                "li",
+                                null,
+                                React.createElement(
+                                    "a",
+                                    { href: "#" },
+                                    "How to make the Law of Attraction work for you"
+                                )
+                            ),
+                            React.createElement(
+                                "li",
+                                null,
+                                React.createElement(
+                                    "a",
+                                    { href: "#" },
+                                    "Take a trip through your mind"
+                                )
+                            ),
+                            React.createElement(
+                                "li",
+                                null,
+                                React.createElement(
+                                    "a",
+                                    { href: "#" },
+                                    "Do Meditation and Yoga at home"
+                                )
+                            ),
+                            React.createElement(
+                                "li",
+                                null,
+                                React.createElement(
+                                    "a",
+                                    { href: "#" },
+                                    "\"Spoonk\" Accupressure Mat reviews"
+                                )
+                            ),
+                            React.createElement(
+                                "li",
+                                null,
+                                React.createElement(
+                                    "a",
+                                    { href: "#" },
+                                    "Meditation Benches Cushions and Chairs"
+                                )
+                            ),
+                            React.createElement(
+                                "li",
+                                null,
+                                React.createElement(
+                                    "a",
+                                    { href: "#" },
+                                    "What is Hypnosis Downloads? - Review"
+                                )
+                            ),
+                            React.createElement(
+                                "li",
+                                null,
+                                React.createElement(
+                                    "a",
+                                    { href: "#" },
+                                    "Bohemian Island - Harem Pants from Thailand"
+                                )
+                            )
                         )
                     )
                 )

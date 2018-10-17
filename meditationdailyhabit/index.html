@@ -4,124 +4,58 @@
 
     <body>
         <div id="header"></div>
-
-            <navigation class="navigation">
-                <ul id="navMenu">
-
-                    <!--   FIRST LEVEL -->
-                    <li><a class="active" href="index.html">Home</a></li>
-                    <!-- ******************* -->
-                    <!--   FIRST LEVEL -->
-                    <li><a href="daily_habit.html">How to make meditation a daily habit</a>
-                        <!-- SECOND LEVEL -->
-                        <ul>
-                            <li><a href="#">Establishing your practice</a></li>
-                            <li><a href="#">Meditation and benefits</a></li>
-                        </ul>
-                    </li>
-                    <!-- ************************ -->
-                    <!--   FIRST LEVEL -->
-                    <li><a href="#">Get started</a>
-                        <!-- SECOND LEVEL -->
-                        <ul>
-                            <li><a href="#">Stage 1 - Cultivating Relaxation</a></li>
-                            <li><a href="#">Stage 2 - Directing your Attention</a></li>
-                        </ul>
-                    </li>
-                    <!-- *********************** -->
-                    <!--   FIRST LEVEL -->
-                    <li><a href="#">Meditation essentials</a>
-                        <!-- SECOND LEVEL -->
-                        <ul>
-                            <li><a href="#">Meditation Instructions</a>
-                                <!-- THIRD LEVEL -->
-                                <ul class="third">
-                                    <li><a href="#">Basic Meditation Instructions</a></li>
-                                    <li><a href="#">How to Sit while Meditating</a></li>
-                                    <li><a href="#">How to Start a Meditation Practice</a></li>
-                                    <li><a href="#">My 7 Days of Meditation Schedule</a></li>
-                                    <li><a href="#">Meditation Object</a></li>
-                                    <li><a href="#">Finding your Intention</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#">Meditation Assistance</a>
-                                <!-- THIRD LEVEL -->
-                                <ul class="third">
-                                    <li><a href="#">How to Stay Motivated Towards Meditation</a></li>
-                                    <li><a href="#">How to Deal with Distractions when Meditating - Get Rid of the Negative Feelings</a></li>
-                                    <li><a href="#">Meditation and Boredom - How to Deal with it</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-                    <!-- *************************** -->
-                    <!-- FIRST LEVEL -->
-                    <li style="float: right;"><a href="#">About me</a></li>
-                    <!-- *************************** -->
-                    <!-- FIRST LEVEL -->
-                    <li style="float: right;"><a href="#">Blog</a></li>
-                    <!-- ********************** -->
-                    <!--   FIRST LEVEL -->
-                    <li style="float: right;"><a href="#">Reviews</a>
-                        <!-- SECOND LEVEL -->
-                        <ul>
-                            <li><a href="#">How to make the Law of Attraction work for you</a></li>
-                            <li><a href="#">Take a trip through your mind</a></li>
-                            <li><a href="#">Do Meditation and Yoga at home</a></li>
-                            <li><a href="#">"Spoonk" Accupressure Mat reviews</a></li>
-                            <li><a href="#">Meditation Benches Cushions and Chairs</a></li>
-                            <li><a href="#">What is Hypnosis Downloads? - Review</a></li>
-                            <li><a href="#">Bohemian Island - Harem Pants from Thailand</a></li>
-                        </ul>
-                    </li>
-                </ul>
+        <div id="navigation"></div>
+        
             
-            </navigation>
-
-<!--
-        <navigation class="navigation">
-            <ul>
-                <li><a class="active" href="index.html">Home</a></li>
-                <li class="navigation__dropdown">
-                    <a href="daily_habit.html" class="navigation__dropdown-link">How to make meditation a daily habit</a>
-                    <div class="navigation__dropdown-link-dropdownContent">
-                        <a href="#">Establishing your practice</a>
-                        <a href="#">Meditation and benefits</a>
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a class="active" href="index.html">Home</a>
+                <a href="daily_habit.html">How to make meditation a daily habit</a>
+                <div style="margin-left: 2.5em;">
+                    <a href="#">Establishing your practice</a>
+                    <a href="#">Meditation and benefits</a>
+                </div>
+                <a href="#">Get started</a> 
+                <div style="margin-left: 2.5em;">
+                    <a href="#">Stage 1 - Cultivating Relaxation</a>
+                    <a href="#">Stage 2 - Directing your Attention</a>
+                </div>
+                <a href="#">Meditation essentials</a> 
+                <div style="margin-left: 2.5em;">
+                    <a href="#">Meditation Instructions</a>
+                    <div style="margin-left: 5em;">
+                        <a href="#">Basic Meditation Instructions</a>
+                        <a href="#">How to Sit while Meditating</a>
+                        <a href="#">How to Start a Meditation Practice</a>
+                        <a href="#">My 7 Days of Meditation Schedule</a>
+                        <a href="#">Meditation Object</a></li>
+                        <a href="#">Finding your Intention</a>
                     </div>
-                </li>
-                <li class="navigation__dropdown">
-                    <a href="#" class="navigation__dropdown-link">Get started</a>
-                    <div class="navigation__dropdown-link-dropdownContent">
-                        <a href="#">Stage 1 - Cultivating relaxation</a>
-                        <a href="#">Stage 2 - Directing your Attention</a>
+                </div>
+                <div style="margin-left: 2.5em;">
+                    <a href="#">Meditation Assistance</a>
+                    <div style="margin-left: 5em;">
+                        <a href="#">How to Stay Motivated Towards Meditation</a>
+                        <a href="#">How to Deal with Distractions when Meditating - Get Rid of the Negative Feelings</a>
+                        <a href="#">Meditation and Boredom - How to Deal with it</a>
                     </div>
-                </li>
-                <li class="navigation__dropdown">
-                    <a href="#" class="navigation__dropdown-link">Meditation essentials</a>
-                    <div class="navigation__dropdown-link-dropdownContent">
-                        <a class="tooltip" href="#">Meditation Instructions
-                            <a href="index.html"><span class="tooltiptext">Edw</span></a>
-                        </a>
-                        <a href="#">Meditation Assistance</a>
-                    </div>
-                </li>
-                <li class="navigation__dropdown">
-                    <a href="#" class="navigation__dropdown-link">Reviews</a>
-                    <div class="navigation__dropdown-link-dropdownContent">
-                        <a href="#">How to make the Law of Attraction work for you</a>
-                        <a href="#">Take a trip through your mind</a>
-                        <a href="#">Do Meditation and Yoga at home</a>
-                        <a href="#">"Spoonk" Accupressure Mat reviews</a>
-                        <a href="#">Meditation Benches Cushions and Chairs</a>
-                        <a href="#">What is Hypnosis Downloads? - Review</a>
-                        <a href="#">Bohemian Island - Harem Pants from Thailand</a>
-                    </div>
-                </li>
-                <li style="float: right;"><a href="#">Blog</a></li>
-                <li style="float: right;"><a href="#">About me</a></li>
-              </ul>
-        </navigation>
-    -->
+                </div>
+                <a href="#">Reviews</a>  
+                <div style="margin-left: 2.5em">
+                    <a href="#">How to make the Law of Attraction work for you</a>
+                    <a href="#">Take a trip through your mind</a>
+                    <a href="#">Do Meditation and Yoga at home</a>
+                    <a href="#">"Spoonk" Accupressure Mat reviews</a>
+                    <a href="#">Meditation Benches Cushions and Chair,s</a>
+                    <a href="#">What is Hypnosis Downloads? - Review</a>
+                    <a href="#">Bohemian Island - Harem Pants from Thailand</a>
+                </div>  
+                <a href="#">Blog</a>
+                <a href="#">About me</a>    
+            </div>
+            <span onclick="openNav()" class="layer2 glyphicon glyphicon-menu-hamburger">HAMBURGER</span>
+            
+            
         <div id="home"></div>
   
 
@@ -206,10 +140,24 @@
   <!-- Load our React components. -->
   <script src="head.js"></script>
   <script src="header.js"></script>
-  <script src="home.js"></script>
   <script src="navigation.js"></script>
+  
+  <script src="home.js"></script>
+
+  <script src="navigation_desktop.js" type="application/javascript"></script>
 
 
+  <script>
+    function openNav() {
+        document.getElementById("mySidenav").style.width = "100%";
+    }
+    
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+    }
+
+    </script>
+  
     </body>
 
 </html>

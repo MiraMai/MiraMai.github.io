@@ -21,7 +21,7 @@ class Home extends React.Component {
                 <div className="row">
                     <div className="col-100">
                     
-                        <img srcset="img/home.jpg 300w, img/home_small.jpg 150w"
+                        <img srcSet="img/home.jpg 300w, img/home_small.jpg 150w"
                              sizes="(max-width: 109em) 22vw, (max-width: 75em) 26vw, (max-width: 31em) 25vw, 300px"   
                              alt="amorgos_beach"
                              className="imgLeft"
