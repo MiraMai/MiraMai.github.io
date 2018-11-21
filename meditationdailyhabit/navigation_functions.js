@@ -5,11 +5,11 @@ let daily_habit_desktop = document.getElementById('daily_habit_desktop');
 let daily_habit = document.getElementById('daily_habit');  
 
 
-   if(window.location.pathname === "/index.html") {
+   if(window.location.pathname === "/meditationdailyhabit/index.html") {
     home_desktop.className = 'active';
     console.log('found index');
     } 
-    if(window.location.pathname === "/daily_habit.html") {
+    if(window.location.pathname === "/meditationdailyhabit/daily_habit.html") {
         daily_habit_desktop.className = 'active';
         console.log('found pathname');
     } else {
@@ -17,14 +17,15 @@ let daily_habit = document.getElementById('daily_habit');
     }
 
 home_desktop.addEventListener('click', function() {
-    window.location.pathname = "/index.html"
+    window.location.pathname = "/meditationdailyhabit/index.html"
 });
 
 daily_habit_desktop.addEventListener('click', function() {
-    window.location.pathname = "/daily_habit.html"
+    window.location.pathname = "/meditationdailyhabit/daily_habit.html"
     
 });
 
 console.log('document.location', document.location.href);
 console.log('location.pathname',  window.location.pathname); 
 console.log('location.href', window.location.href);
+
