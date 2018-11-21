@@ -135,6 +135,17 @@ ul#navMenu ul li:hover ul {
     transition: 0.6s  
 }
 
+// makes the arrow display beside the text (inline) and not in a new row
+.sidenav div a {
+    display: inline-block;
+}
+
+// makes the subcategory 1 display as block elements
+.sidenav div.subCategory1 a {
+    display: block;
+}
+
+
 .sidenav a:hover, .offcanvas a:focus{
     color: #f1f1f1;
 }

@@ -25,6 +25,6 @@ daily_habit_desktop.addEventListener('click', function() {
     
 });
 
-//console.log('document.location', document.location.href);
-//console.log('location.pathname',  window.location.pathname); // Returns path only
-//console.log('location.href', window.location.href); // Returns full URL
+console.log('document.location', document.location.href);
+console.log('location.pathname',  window.location.pathname); 
+console.log('location.href', window.location.href);

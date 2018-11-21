@@ -2,7 +2,37 @@
 
 class Navigationmobile extends React.Component {
     
-    
+    subMenu1() {
+        if(document.getElementById("sub1").style.display === "none") {
+            document.getElementById("sub1").style.display = "inline";
+        } else if(document.getElementById("sub1").style.display === "inline"){
+            document.getElementById("sub1").style.display = "none";
+        }
+    }
+
+    subMenu2() {
+        if(document.getElementById("sub2").style.display === "none") {
+            document.getElementById("sub2").style.display = "inline";
+        } else if(document.getElementById("sub2").style.display === "inline"){
+            document.getElementById("sub2").style.display = "none";
+        }
+    }
+
+    subMenu3() {
+        if(document.getElementById("sub3").style.display === "none") {
+            document.getElementById("sub3").style.display = "inline";
+        } else if(document.getElementById("sub3").style.display === "inline"){
+            document.getElementById("sub3").style.display = "none";
+        }
+    }
+
+    subMenu4() {
+        if(document.getElementById("sub4").style.display === "none") {
+            document.getElementById("sub4").style.display = "inline";
+        } else if(document.getElementById("sub4").style.display === "inline"){
+            document.getElementById("sub4").style.display = "none";
+        }
+    }
 
     openNav() {
         document.getElementById("mySidenav").style.width = "100%";
@@ -24,44 +54,46 @@ class Navigationmobile extends React.Component {
                     <a className="active" href="index.html">Home</a>
 
 
-                    <a href="daily_habit.html">How to make meditation a daily habit</a>
-                    <div style={{marginLeft: '2.5em'}}>
+                    <div><a href="daily_habit.html">How to make meditation a daily habit </a><i onClick ={this.subMenu1} className="fas fa-angle-down"style={{fontSize: '28px', display: 'inline'}}></i></div>
+                    <div style={{display: 'none'}} id="sub1" className="subCategory1">
                         <a href="#">Establishing your practice</a>
                         <a href="#">Meditation and benefits</a>
-                    </div>
+                    </div> 
 
 
-                    <a href="#">Get started</a> 
-                    <div style={{marginLeft: '2.5em'}}>
+                    <div><a href="#">Get started </a><i onClick ={this.subMenu2} className="fas fa-angle-down"style={{fontSize: '28px', display: 'inline'}}></i></div>
+                    <div style={{display: 'none'}} id="sub2" className="subCategory1">
                         <a href="#">Stage 1 - Cultivating Relaxation</a>
                         <a href="#">Stage 2 - Directing your Attention</a>
                     </div>
 
 
-                    <a href="#">Meditation essentials</a> 
-                    <div style={{marginLeft: '2.5em'}}>
-                        <a href="#">Meditation Instructions</a>
-                        <div style={{marginLeft: '5em'}}>
-                            <a href="#">Basic Meditation Instructions</a>
-                            <a href="#">How to Sit while Meditating</a>
-                            <a href="#">How to Start a Meditation Practice</a>
-                            <a href="#">My 7 Days of Meditation Schedule</a>
-                            <a href="#">Meditation Object</a>
-                            <a href="#">Finding your Intention</a>
-                        </div>
-                    </div>  
+                    <div><a href="#">Meditation essentials </a><i onClick ={this.subMenu3} className="fas fa-angle-down"style={{fontSize: '28px', display: 'inline'}}></i></div>
+                        <div style={{display: 'none'}} id="sub3" className="subCategory1">
+                            <div>
+                                <a href="#">Meditation Instructions</a>
+                                <div style={{marginLeft: '5em'}}>
+                                    <a href="#">Basic Meditation Instructions</a>
+                                    <a href="#">How to Sit while Meditating</a>
+                                    <a href="#">How to Start a Meditation Practice</a>
+                                    <a href="#">My 7 Days of Meditation Schedule</a>
+                                    <a href="#">Meditation Object</a>
+                                    <a href="#">Finding your Intention</a>
+                                </div>
+                            </div>  
 
-                    <div style={{marginLeft: '2.5em'}}>
-                        <a href="#">Meditation Assistance</a>
-                        <div style={{marginLeft: '5em'}}>
-                            <a href="#">How to Stay Motivated Towards Meditation</a>
-                            <a href="#">How to Deal with Distractions when Meditating - Get Rid of the Negative Feelings</a>
-                            <a href="#">Meditation and Boredom - How to Deal with it</a>
-                        </div>
-                    </div>
+                            <div>
+                                <a href="#">Meditation Assistance</a>
+                                <div style={{marginLeft: '5em'}}>
+                                    <a href="#">How to Stay Motivated Towards Meditation</a>
+                                    <a href="#">How to Deal with Distractions when Meditating - Get Rid of the Negative Feelings</a>
+                                    <a href="#">Meditation and Boredom - How to Deal with it</a>
+                                </div>
+                            </div>
+                        </div>    
 
-                    <a href="#">Reviews</a>  
-                    <div style={{marginLeft: '2.5em'}}>
+                    <div><a href="#">Reviews </a><i onClick ={this.subMenu4} className="fas fa-angle-down"style={{fontSize: '28px', display: 'inline'}}></i></div>
+                    <div style={{display: 'none'}} id="sub4" className="subCategory1">
                         <a href="#">How to make the Law of Attraction work for you</a>
                         <a href="#">Take a trip through your mind</a>
                         <a href="#">Do Meditation and Yoga at home</a>
@@ -77,7 +109,7 @@ class Navigationmobile extends React.Component {
 
                     <a href="#">About me</a>    
             </div>
-            <span onClick={this.openNav} className="menu"><i className="fas fa-bars"></i></span>
+            <span onClick={this.openNav} className="menu"><i className="fas fa-bars"style={{fontSize: '30px'}}></i></span>
 
 
         </div>

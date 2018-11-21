@@ -18,6 +18,42 @@ var Navigationmobile = function (_React$Component) {
     }
 
     _createClass(Navigationmobile, [{
+        key: "subMenu1",
+        value: function subMenu1() {
+            if (document.getElementById("sub1").style.display === "none") {
+                document.getElementById("sub1").style.display = "inline";
+            } else if (document.getElementById("sub1").style.display === "inline") {
+                document.getElementById("sub1").style.display = "none";
+            }
+        }
+    }, {
+        key: "subMenu2",
+        value: function subMenu2() {
+            if (document.getElementById("sub2").style.display === "none") {
+                document.getElementById("sub2").style.display = "inline";
+            } else if (document.getElementById("sub2").style.display === "inline") {
+                document.getElementById("sub2").style.display = "none";
+            }
+        }
+    }, {
+        key: "subMenu3",
+        value: function subMenu3() {
+            if (document.getElementById("sub3").style.display === "none") {
+                document.getElementById("sub3").style.display = "inline";
+            } else if (document.getElementById("sub3").style.display === "inline") {
+                document.getElementById("sub3").style.display = "none";
+            }
+        }
+    }, {
+        key: "subMenu4",
+        value: function subMenu4() {
+            if (document.getElementById("sub4").style.display === "none") {
+                document.getElementById("sub4").style.display = "inline";
+            } else if (document.getElementById("sub4").style.display === "inline") {
+                document.getElementById("sub4").style.display = "none";
+            }
+        }
+    }, {
         key: "openNav",
         value: function openNav() {
             document.getElementById("mySidenav").style.width = "100%";
@@ -47,13 +83,18 @@ var Navigationmobile = function (_React$Component) {
                         "Home"
                     ),
                     React.createElement(
-                        "a",
-                        { href: "daily_habit.html" },
-                        "How to make meditation a daily habit"
+                        "div",
+                        null,
+                        React.createElement(
+                            "a",
+                            { href: "daily_habit.html" },
+                            "How to make meditation a daily habit "
+                        ),
+                        React.createElement("i", { onClick: this.subMenu1, className: "fas fa-angle-down", style: { fontSize: '28px', display: 'inline' } })
                     ),
                     React.createElement(
                         "div",
-                        { style: { marginLeft: '2.5em' } },
+                        { style: { display: 'none' }, id: "sub1", className: "subCategory1" },
                         React.createElement(
                             "a",
                             { href: "#" },
@@ -66,13 +107,18 @@ var Navigationmobile = function (_React$Component) {
                         )
                     ),
                     React.createElement(
-                        "a",
-                        { href: "#" },
-                        "Get started"
+                        "div",
+                        null,
+                        React.createElement(
+                            "a",
+                            { href: "#" },
+                            "Get started "
+                        ),
+                        React.createElement("i", { onClick: this.subMenu2, className: "fas fa-angle-down", style: { fontSize: '28px', display: 'inline' } })
                     ),
                     React.createElement(
                         "div",
-                        { style: { marginLeft: '2.5em' } },
+                        { style: { display: 'none' }, id: "sub2", className: "subCategory1" },
                         React.createElement(
                             "a",
                             { href: "#" },
@@ -85,89 +131,103 @@ var Navigationmobile = function (_React$Component) {
                         )
                     ),
                     React.createElement(
-                        "a",
-                        { href: "#" },
-                        "Meditation essentials"
-                    ),
-                    React.createElement(
                         "div",
-                        { style: { marginLeft: '2.5em' } },
+                        null,
                         React.createElement(
                             "a",
                             { href: "#" },
-                            "Meditation Instructions"
+                            "Meditation essentials "
+                        ),
+                        React.createElement("i", { onClick: this.subMenu3, className: "fas fa-angle-down", style: { fontSize: '28px', display: 'inline' } })
+                    ),
+                    React.createElement(
+                        "div",
+                        { style: { display: 'none' }, id: "sub3", className: "subCategory1" },
+                        React.createElement(
+                            "div",
+                            null,
+                            React.createElement(
+                                "a",
+                                { href: "#" },
+                                "Meditation Instructions"
+                            ),
+                            React.createElement(
+                                "div",
+                                { style: { marginLeft: '5em' } },
+                                React.createElement(
+                                    "a",
+                                    { href: "#" },
+                                    "Basic Meditation Instructions"
+                                ),
+                                React.createElement(
+                                    "a",
+                                    { href: "#" },
+                                    "How to Sit while Meditating"
+                                ),
+                                React.createElement(
+                                    "a",
+                                    { href: "#" },
+                                    "How to Start a Meditation Practice"
+                                ),
+                                React.createElement(
+                                    "a",
+                                    { href: "#" },
+                                    "My 7 Days of Meditation Schedule"
+                                ),
+                                React.createElement(
+                                    "a",
+                                    { href: "#" },
+                                    "Meditation Object"
+                                ),
+                                React.createElement(
+                                    "a",
+                                    { href: "#" },
+                                    "Finding your Intention"
+                                )
+                            )
                         ),
                         React.createElement(
                             "div",
-                            { style: { marginLeft: '5em' } },
+                            null,
                             React.createElement(
                                 "a",
                                 { href: "#" },
-                                "Basic Meditation Instructions"
+                                "Meditation Assistance"
                             ),
                             React.createElement(
-                                "a",
-                                { href: "#" },
-                                "How to Sit while Meditating"
-                            ),
-                            React.createElement(
-                                "a",
-                                { href: "#" },
-                                "How to Start a Meditation Practice"
-                            ),
-                            React.createElement(
-                                "a",
-                                { href: "#" },
-                                "My 7 Days of Meditation Schedule"
-                            ),
-                            React.createElement(
-                                "a",
-                                { href: "#" },
-                                "Meditation Object"
-                            ),
-                            React.createElement(
-                                "a",
-                                { href: "#" },
-                                "Finding your Intention"
+                                "div",
+                                { style: { marginLeft: '5em' } },
+                                React.createElement(
+                                    "a",
+                                    { href: "#" },
+                                    "How to Stay Motivated Towards Meditation"
+                                ),
+                                React.createElement(
+                                    "a",
+                                    { href: "#" },
+                                    "How to Deal with Distractions when Meditating - Get Rid of the Negative Feelings"
+                                ),
+                                React.createElement(
+                                    "a",
+                                    { href: "#" },
+                                    "Meditation and Boredom - How to Deal with it"
+                                )
                             )
                         )
                     ),
                     React.createElement(
                         "div",
-                        { style: { marginLeft: '2.5em' } },
+                        null,
                         React.createElement(
                             "a",
                             { href: "#" },
-                            "Meditation Assistance"
+                            "Reviews "
                         ),
-                        React.createElement(
-                            "div",
-                            { style: { marginLeft: '5em' } },
-                            React.createElement(
-                                "a",
-                                { href: "#" },
-                                "How to Stay Motivated Towards Meditation"
-                            ),
-                            React.createElement(
-                                "a",
-                                { href: "#" },
-                                "How to Deal with Distractions when Meditating - Get Rid of the Negative Feelings"
-                            ),
-                            React.createElement(
-                                "a",
-                                { href: "#" },
-                                "Meditation and Boredom - How to Deal with it"
-                            )
-                        )
-                    ),
-                    React.createElement(
-                        "a",
-                        { href: "#" },
-                        "Reviews"
+                        React.createElement("i", { onClick: this.subMenu4, className: "fas fa-angle-down", style: { fontSize: '28px', display: 'inline' } })
                     ),
                     React.createElement(
                         "div",
-                        { style: { marginLeft: '2.5em' } },
+                        { style: { display: 'none' }, id: "sub4", className: "subCategory1" },
                         React.createElement(
                             "a",
                             { href: "#" },
@@ -218,7 +278,7 @@ var Navigationmobile = function (_React$Component) {
                 React.createElement(
                     "span",
                     { onClick: this.openNav, className: "menu" },
-                    React.createElement("i", { className: "fas fa-bars" })
+                    React.createElement("i", { className: "fas fa-bars", style: { fontSize: '30px' } })
                 )
             );
         }
