@@ -126,17 +126,54 @@ ul#navMenu ul li:hover ul {
     text-align: left;
 }
 
-.sidenav a {
-    padding: 8px 8px 8px 32px;
+.sidenav a.xBtn {
     text-decoration: none;
-    font-size: 25px;
+    font-size: 5rem;
     color: #a3a375;
     display: block;
-    transition: 0.6s  
+}
+
+.sidenav a.mobileMenuText {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 2.5rem;
+    color: #a3a375;
+    display: block;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    transition: 0.6s ;
+
+    &:hover {
+        color: white;
+    }
+}
+
+.sidenav div.subCategory1 a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 2.2rem;
+    color: #a3a375;
+    display: block;
+    letter-spacing: .2rem;
+    background-color: rgba(97, 86, 51, 0.479);
+    transition: 0.6s ;
+
+    &:hover {
+        color: white;
+    }
+}
+
+.sidenav div.subCategory2 a {
+   background-color: rgba(5, 5, 5, 0.479);
+   font-size: 2rem;
+
+   &:hover {
+       color: white;
+   }
 }
 
 // makes the arrow display beside the text (inline) and not in a new row
-.sidenav div a {
+.sidenav div a.mobileMenuText {
     display: inline-block;
 }
 

@@ -74,12 +74,12 @@ var Navigationmobile = function (_React$Component) {
                     { id: "mySidenav", className: "sidenav" },
                     React.createElement(
                         "a",
-                        { href: "javascript:void(0)", className: "closebtn", onClick: this.closeNav },
+                        { href: "javascript:void(0)", className: "closebtn xBtn", onClick: this.closeNav },
                         "\xD7"
                     ),
                     React.createElement(
                         "a",
-                        { className: "active", href: "index.html" },
+                        { className: "active mobileMenuText", href: "index.html" },
                         "Home"
                     ),
                     React.createElement(
@@ -87,7 +87,7 @@ var Navigationmobile = function (_React$Component) {
                         null,
                         React.createElement(
                             "a",
-                            { href: "daily_habit.html" },
+                            { href: "daily_habit.html", className: "mobileMenuText" },
                             "How to make meditation a daily habit "
                         ),
                         React.createElement("i", { onClick: this.subMenu1, className: "fas fa-angle-down", style: { fontSize: '28px', display: 'inline' } })
@@ -111,7 +111,7 @@ var Navigationmobile = function (_React$Component) {
                         null,
                         React.createElement(
                             "a",
-                            { href: "#" },
+                            { href: "#", className: "mobileMenuText" },
                             "Get started "
                         ),
                         React.createElement("i", { onClick: this.subMenu2, className: "fas fa-angle-down", style: { fontSize: '28px', display: 'inline' } })
@@ -135,7 +135,7 @@ var Navigationmobile = function (_React$Component) {
                         null,
                         React.createElement(
                             "a",
-                            { href: "#" },
+                            { href: "#", className: "mobileMenuText" },
                             "Meditation essentials "
                         ),
                         React.createElement("i", { onClick: this.subMenu3, className: "fas fa-angle-down", style: { fontSize: '28px', display: 'inline' } })
@@ -153,7 +153,7 @@ var Navigationmobile = function (_React$Component) {
                             ),
                             React.createElement(
                                 "div",
-                                { style: { marginLeft: '5em' } },
+                                { style: { marginLeft: '5em' }, className: "subCategory2" },
                                 React.createElement(
                                     "a",
                                     { href: "#" },
@@ -196,7 +196,7 @@ var Navigationmobile = function (_React$Component) {
                             ),
                             React.createElement(
                                 "div",
-                                { style: { marginLeft: '5em' } },
+                                { style: { marginLeft: '5em' }, className: "subCategory2" },
                                 React.createElement(
                                     "a",
                                     { href: "#" },
@@ -220,7 +220,7 @@ var Navigationmobile = function (_React$Component) {
                         null,
                         React.createElement(
                             "a",
-                            { href: "#" },
+                            { href: "#", className: "mobileMenuText" },
                             "Reviews "
                         ),
                         React.createElement("i", { onClick: this.subMenu4, className: "fas fa-angle-down", style: { fontSize: '28px', display: 'inline' } })
@@ -266,12 +266,12 @@ var Navigationmobile = function (_React$Component) {
                     ),
                     React.createElement(
                         "a",
-                        { href: "#" },
+                        { href: "#", className: "mobileMenuText" },
                         "Blog"
                     ),
                     React.createElement(
                         "a",
-                        { href: "#" },
+                        { href: "#", className: "mobileMenuText" },
                         "About me"
                     )
                 ),
