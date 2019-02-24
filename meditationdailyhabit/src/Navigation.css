@@ -1,0 +1,209 @@
+#navigation {
+    display: block;
+}
+
+#navigationmobile {
+    display: none;
+    margin-top: 1%;
+}
+@media only screen and (max-width: 1200px) {
+    #navigationmobile {
+        display: block;
+    }    
+  }
+
+.menu {
+    color: #cccccc;
+}
+
+.navigation {
+    max-width: 100%;
+    margin: 0 auto; 
+}
+
+ul#navMenu {
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    position: relative;
+    text-transform: uppercase;
+    padding: 1.4rem .5rem;
+    margin-bottom: 7%;
+}
+ /* DROPDOWN */
+ul#navMenu ul {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    display: none;
+    padding: 0px;
+    margin: 0px;    
+}
+ul#navMenu ul li {
+    display: block;
+    margin: 0px;
+}
+#navMenu:hover ul#navMenu ul {
+    display: block;
+}
+
+/* DROPDOWN DISPLAYS WHEN HOVER */
+ul#navMenu li:hover ul {
+    display: block;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;  
+    
+}
+
+/*******************************/
+ 
+ul#navMenu li {
+    display: inline;
+    /*float: left;*/
+    position: relative;
+    border-bottom: 1px solid #bbb;
+    margin-right: 1rem;
+    padding: .8rem .8rem;
+}
+ 
+ul#navMenu li a {
+    font-size: .9rem;
+    font-weight: 500;
+    color: #777;
+    text-align: center; 
+    text-decoration: none;
+    letter-spacing: .06rem;
+    transition: transform .3s;
+}
+
+/* HOVER EFFECTS NOT FUNCTIONING */
+ul#navMenu a:hover:not(.active) {
+    transform: translateY(-0.2rem) scale(1.1);
+    color: #ff9900;
+}
+
+/* NOT WORKING */
+ul#navMenu a:active {
+    color: #ff9900;
+}
+     
+/* THE ELEMENTS INSIDE OF DROPDOWN*/
+ul#navMenu ul a {
+    text-transform: capitalize;
+}
+
+ul#navMenu ul li {
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    background-color: #f9f9f9;
+    padding: 20px;
+    text-align: center;
+}
+
+/*  THIRD NAVIGATION LEVEL 
+ul#navMenu ul.third a {
+    color: #a6a6a6;
+} 
+       
+ul#navMenu ul li {
+    display: block;
+    margin: 0px;
+} */
+
+/* 2ND DROPDOWN LEVEL
+ul#navMenu ul ul {
+    top: 0;
+    left: 100%;
+}
+            
+ul#navMenu li:hover ul ul {
+    display:none;
+} 
+            
+ul#navMenu ul li:hover ul {
+    display:block;
+} */
+
+
+/* HAMBURGER */
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    opacity: 1;
+    overflow-x: hidden;
+    transition: 0.8s;
+    padding-top: 60px;
+    text-align: left;
+}
+
+.sidenav a.xBtn {
+    text-decoration: none;
+    font-size: 2rem;
+    color: #a3a375;
+    display: block;
+}
+
+.sidenav a.mobileMenuText {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 1rem;
+    color: #a3a375;
+    display: block;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    transition: 0.6s ;
+}
+.sidenav a.mobileMenuText:hover {
+    color: white;
+}
+
+.sidenav div.subCategory1 a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 1rem;
+    color: #a3a375;
+    display: block;
+    letter-spacing: .2rem;
+    background-color: rgba(97, 86, 51, 0.479);
+    transition: 0.6s ;
+}
+.sidenav div.subCategory1 a:hover {
+    color: white;
+}
+
+.sidenav div.subCategory2 a {
+   background-color: rgba(5, 5, 5, 0.479);
+   font-size: .9rem;
+}
+.sidenav div.subCategory2 a:hover {
+    color: white;
+}
+
+/*  makes the arrow display beside the text (inline) and not in a new row */
+.sidenav div a.mobileMenuText {
+    display: inline-block;
+}
+
+/* makes the subcategory 1 display as block elements */
+.sidenav div.subCategory1 a {
+    display: block;
+}
+
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}

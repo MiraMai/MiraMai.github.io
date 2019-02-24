@@ -1,0 +1,128 @@
+body {
+  font-family: "Lato", sans-serif;
+  line-height: 1.7;
+  padding: .7rem;
+  color: #404040;
+  /* we dont want any margins or paddings on any element that are applied by default by the browsers */
+  /* the margins and the paddings are not added to the total width and height that is specified for a box */
+  box-sizing: border-box;
+}
+
+h2 {
+  color: #666;
+  padding-bottom: 1.5rem;  
+}
+
+h3, h4, h5, h6, h7 {
+  color: #4d4d4d;
+}
+
+/* IMAGES */
+img.imgLeft {
+  width: 40%;
+  height: auto;
+  float: left;
+  margin-right: 2rem;
+  margin-bottom: 1rem;
+}
+
+img.imgRight {
+  width: 40%;
+  height: auto;
+  float: right;
+  margin-left: 2rem;
+  margin-bottom: 1rem;
+}
+
+img.imgcenter {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1rem;
+}
+
+.logoColor {
+  color: #e6b800;
+}
+
+/* LINKS */
+a:link {
+    color: #e6b800;
+    text-decoration: underline;
+}
+
+a:visited {
+    color: #e6b800;
+}
+
+a:hover {
+    color:  #b38f00;
+}
+
+/* NOTE */
+.note {
+    background-color:  #fff0b3;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.Note {
+    font-weight: 700;
+}
+
+.quote {
+    background-color:  #fff0b3;
+    font-size: 1.8rem;
+    font-style: italic;
+    border-left: 4px solid #ff9900;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.quotes {
+    font-size: 1.69rem;
+    font-style: italic;
+    font-weight: 550;
+}
+
+.bold {
+    font-weight: 800;
+}
+
+.bigger {
+    font-size: 1.2rem;
+    font-weight: 550;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+
+.search_by_category { 
+  font-size: 1.5rem;
+}
+
+
+.list_in_sidebar {
+  list-style-type: none;
+  padding: 0 2rem 2rem 2rem;
+  text-align: left;
+}
+
+.sidebar {
+  margin-top: 20%;
+  max-width: 114rem;
+  background-color: #F8F2EC;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); 
+  border-radius: .2rem;
+}
+
+  /* we select everything except the last child */
+  .sidebar:not(:last-child) {
+    margin-bottom: 8rem;
+}
+
+
