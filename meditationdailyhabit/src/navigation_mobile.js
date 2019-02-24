@@ -1,6 +1,22 @@
 import React from 'react'
+import {
+    BrowserRouter as Router,
+    Route,
+    Link
+  } from 'react-router-dom';
 import './Style.css';
 import './Navigation.css';
+
+import {Homepage} from './Homepage';
+import {Dailyhabit} from './Dailyhabit';
+
+const Home = () => (
+    <Homepage />
+)
+
+const DailyhabitM = () => (
+    <Dailyhabit />
+)
 
 export class Navigationmobile extends React.Component {
     
@@ -43,20 +59,24 @@ export class Navigationmobile extends React.Component {
     closeNav() {
         document.getElementById("mySidenav").style.width = "0";
     }
+    reload() {
+        Location.reload();
+      }
 
     
     render() {
         return (
+            <Router>
             <div id="navigationmobile">
 
                 <div id="mySidenav" className="sidenav">
                     <a href="javascript:void(0)" className="closebtn xBtn" onClick={this.closeNav}>&times;</a>
 
 
-                    <a className="active mobileMenuText" href="index.html">Home</a>
+                    <Link className="active mobileMenuText" to="/" onClick= {this.closeNav}>Home</Link>
 
 
-                    <div><a href="daily_habit.html" className="mobileMenuText">Μake meditation a daily habit </a><i onClick ={this.subMenu1} className="fas fa-angle-down" style={{fontSize: '25px', display: 'inline'}}></i></div>
+                    <div><Link to="/dailyhabitM" onClick= {this.closeNav} className="mobileMenuText">Μake meditation a daily habit </Link><i onClick ={this.subMenu1} className="fas fa-angle-down" style={{fontSize: '25px', display: 'inline'}}></i></div>
                     <div style={{display: 'none'}} id="sub1" className="subCategory1">
                         <a href="/">Establishing your practice</a>
                         <a href="/">Meditation and benefits</a>
@@ -112,9 +132,13 @@ export class Navigationmobile extends React.Component {
                     <a href="/" className="mobileMenuText">About me</a>    
             </div>
             <span onClick={this.openNav} className="menu"><i className="fas fa-bars"style={{fontSize: '30px'}}></i></span>
-
+            
+            
+            <Route exact path="/" component={Home}/>
+            <Route path="/dailyhabitM" component={DailyhabitM}/>
 
         </div>
+        </Router>
         );
     }
 }

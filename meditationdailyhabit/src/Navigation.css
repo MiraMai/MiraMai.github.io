@@ -1,5 +1,11 @@
 #navigation {
     display: block;
+}    
+
+    @media only screen and (max-width: 1200px) {
+        #navigation {
+            display: none;
+    }
 }
 
 #navigationmobile {
@@ -14,6 +20,7 @@
 
 .menu {
     color: #cccccc;
+    margin-left: 0.6%;
 }
 
 .navigation {
@@ -28,7 +35,6 @@ ul#navMenu {
     position: relative;
     text-transform: uppercase;
     padding: 1.4rem .5rem;
-    margin-bottom: 7%;
 }
  /* DROPDOWN */
 ul#navMenu ul {
@@ -137,7 +143,7 @@ ul#navMenu ul li:hover ul {
     background-color: #111;
     opacity: 1;
     overflow-x: hidden;
-    transition: 0.8s;
+    transition: 0.6s;
     padding-top: 60px;
     text-align: left;
 }
