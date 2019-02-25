@@ -5,21 +5,26 @@
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.116), rgba(0, 0, 0, 0.747)), url(header.jpg);
     background-size: cover;
     background-position: top;
-    font-family: 'Sacramento', cursive;
-    color: #e6b800;
-  
+    color: #e6b800;  
+    
   
     font-family: 'Miss Fajardose', cursive;
-  
-    font-family: 'Raleway', sans-serif;
-    /* font-family: 'Mallanna', sans-serif;
-    //font-family: 'Spirax', cursive;
-    //font-family: 'PT Sans Caption', sans-serif; */
+    font-family: 'Sacramento', cursive;
+    font-family: 'Spirax', cursive;
+    font-family: 'Alice', serif;
+    
+    padding-top: .5%;
+    padding-left: .6%;
+    padding-bottom: 20%;
   } 
   
 
   h1 {
-    font-size: 3rem;
-    padding-left: 1.5rem;
-    padding-bottom: 20%;
+    font-size: 2.4rem;
+    display: inline;
+    vertical-align: bottom;
+}
+
+.logo {
+  display: inline;
 }

@@ -16,6 +16,16 @@ h2 {
 
 h3, h4, h5, h6, h7 {
   color: #4d4d4d;
+  margin-top: 4%;
+  margin-bottom: 1%;
+}
+
+h4 {
+  font-size: 1.7rem;
+}
+
+h5 {
+  font-size: 1.6rem;
 }
 
 /* IMAGES */
@@ -75,7 +85,7 @@ a:hover {
 
 .quote {
     background-color:  #fff0b3;
-    font-size: 1.8rem;
+    font-size: 1.1rem;
     font-style: italic;
     border-left: 4px solid #ff9900;
     padding: 1rem;
@@ -83,7 +93,7 @@ a:hover {
 }
 
 .quotes {
-    font-size: 1.69rem;
+    font-size: 1.1rem;
     font-style: italic;
     font-weight: 550;
 }

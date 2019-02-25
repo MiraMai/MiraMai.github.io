@@ -2,6 +2,8 @@ import React from 'react'
 import './Style.css';
 import h2_icon from './h2_icon.png';
 import home from './home.jpg';
+import {Sidebar} from './sidebar';
+
 
 
 export class Homepage extends React.Component {
@@ -18,7 +20,6 @@ export class Homepage extends React.Component {
                       
                       <div className="col-12">
                         <h2>
-                          <img src={h2_icon} alt="lotus icon" />
                           Home
                         </h2>
                       </div>
@@ -64,21 +65,7 @@ export class Homepage extends React.Component {
         
                     </div>
         
-                    <div className="col-12 col-lg-3">
-                      <div className="sidebar">
-                        <p className="search_by_category">Search by category</p>
-                        <ul className="list_in_sidebar">
-                          <li>Anti-stress</li>
-                          <li>Chacras</li>
-                          <li>Etheric body</li>
-                          <li>Guided Meditations</li>
-                          <li>Mantras</li>
-                          <li>Meditation Tools</li>
-                          <li>Personal Development</li>
-                          <li>Yoga</li>
-                        </ul>
-                      </div>
-                    </div>
+                   <Sidebar /> 
         
                 </div>
         

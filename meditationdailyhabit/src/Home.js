@@ -27,7 +27,6 @@ const Topic = ({ match }) => (
   </div>
 )
 
-
 const Topics = ({ match }) => (
   <div>
     <h2>Topics</h2>
@@ -65,19 +64,19 @@ const Navigation = () => (
       <div id="navigation">
         <Router>
           <navigation className="navigation">
-            <ul id="navMenu">
+            <ul id="navMenu" style={{border: '5px solid white', display: 'block'}}>
               <li><Link to="/">Ηome</Link></li>
               <li><Link to="/dailyhabitM">Make meditation a daily habit</Link></li>
-              <li><Link to="/getstartedM">Get started</Link></li>
-              <li><Link to="/topics">Meditation essentials</Link>
-                <ul className="firstdrpd">
+              <li><Link to="/">Get started</Link>
+              <ul className="firstdrpd">
                   <li style={{minWidth: '300px'}}><a href="/">Stage 1 - Cultivating Relaxation</a></li>
-                  <li style={{minWidth: '300px'}}><a href="/">Stage 2 - Cultivating Relaxation</a></li>
+                  <li style={{minWidth: '300px'}}><a href="/">Stage 2 - Directing your Attention</a></li>
                 </ul>
               </li>
-              <li style={{float: 'right'}}><Link to="/topics">About me</Link></li>
-              <li style={{float: 'right'}}><Link to="/topics">Blog</Link></li>
-              <li style={{float: 'right'}}><Link to="/topics">Reviews</Link></li>
+              <li><Link to="/topics">Meditation essentials</Link></li>
+              <li style={{float: 'right', marginTop: '-1.5%'}}><Link to="/topics">About me</Link></li>
+              <li style={{float: 'right', marginTop: '-1.5%'}}><Link to="/topics">Blog</Link></li>
+              <li style={{float: 'right', marginTop: '-1.5%'}}><Link to="/topics">Reviews</Link></li>
             </ul>
 
   

@@ -35,6 +35,7 @@ ul#navMenu {
     position: relative;
     text-transform: uppercase;
     padding: 1.4rem .5rem;
+    display: block;
 }
  /* DROPDOWN */
 ul#navMenu ul {

@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import './Style.css';
-import h2_icon from './h2_icon.png';
 import girl_sitting_on_veranda from './girl_sitting_on_veranda.jpg';
 import relax from './relax.jpg';
+import woman_meditating from './woman_meditating.jpg';
+import {Sidebar} from './sidebar';
 
 
 export class Dailyhabit extends Component {
@@ -15,7 +16,6 @@ export class Dailyhabit extends Component {
               
                         <div className="col-12">
                             <h2>
-                                <img src={h2_icon} alt="lotus icon" />
                                     How to make meditation a daily habit
                             </h2>
                         </div>
@@ -45,12 +45,40 @@ export class Dailyhabit extends Component {
                             <br />My mission with this website is to learn more about meditation and share the things I know based on my experience with you.
                             </p>
 
-                        </div>       
+                        </div>   
 
+                        <div className= "col-12">
+                            <h3> Why is it so important to make meditation a daily habit? </h3>
+                            <p>By practicing daily, your brain learns how to exist in a different way on a regular basis. It gets used to new patterns of thinking and existing. If you don’t do it every day it’s just not enough to change your way of thinking.
+                            <br />
+                               If you, for example, do it twice per week it’s like you are repeating, again and again, the same things without developing; even if you stay longer than you would stay if you did it every day. It's like when you start learning a language for example. If you don't practice and study the language often enough you will end up repeating what you learned in the previous lessons every time you decide to study.
+                            <br />   
+                               At this point, I want to mention what the great philosopher Aristotle said: 
+                            </p>
+                            <p className="quote">“We are what we repeatedly do. Excellence, then, is not an act, but a habit."</p>
+                        </div>
 
+                        <div className= "col-12">
+                            <h4> How to think to make it happen! </h4>
+                            <img src= {woman_meditating}
+                            sizes="(max-width: 109em) 53vw, (max-width: 75em) 65vw, (max-width: 31em) 100vw, 900px"
+                            alt="girl sitting on veranda"
+                            className="imgcenter" />
+                            <p>It doesn’t matter if you meditate only for 5 minutes per day as long as you do it <span className="bigger">every day!</span></p>
+                            <p>Besides, a beginner cannot stay more than a few minutes. Meditation is something that happens slowly and you have to build it every day, gradually so that you will be able to stay longer without forcing and pressuring  too much yourself. You can even start with 3 minutes per day if you feel that 5 are too much.</p>
+                        </div>  
 
+                        <div className= "col-12">
+                            <h5> The key is to set the bar low </h5>
+                            <p>When you say to yourself: <span className="quotes">” I will meditate for 20 minutes today”,</span>  may make you feel pressure that you have to sit on a specific spot for 20 minutes….<span className="bigger">without moving!!</span></p>
+                            <p>So I think it’s better to say:  <span className="quotes">“ I will just meditate for 3 minutes today”</span>.</p>
+                            <p>The result → Instead of feeling bad and thinking: <span className="quotes">” I find it difficult to stay on this spot for the next 20 minutes..”</span>, your feeling switches to: <span className="quotes">“I just have to sit here for 3 minutes”</span>.</p>
+                            <p>The good thing by thinking like this is that most of the time you will sit more than 3 minutes because you simply feel like it and not because you have to.</p>
+                        </div>      
 
-                    </div>    
+                    </div>  
+
+                    <Sidebar />  
                 </div>    
             </div>    
 
